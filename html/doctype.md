@@ -158,26 +158,17 @@ HTML 문서(웹페이지)에 관한 정보(제작자, 내용, 키워드 등)를 
 <br>
 <br>
 
-### `<script>`
-
-`<script>` 태그는 데이터와 실행 가능한 코드를 문서에 포함할 때 사용하며 보통 JavaScript 코드와 함께 씁니다.
-JavaScript 의 경우, 외부 리소스를 `<link>`를 통해 불러오거나 `<script>` 태그를 이용하여 문서 내부에 작성할 수 있습니다.
-
-사용예시
-
-```html
-
-```
-
 ---
 
 ### References
 
-- [Document type declaration](https://en.wikipedia.org/wiki/Document_type_declaration)
-- [What’s in the head? Metadata in HTML | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
-- [\<head\>: The Document Metadata (Header) element | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)
-- [\<base\>: The Document Base URL element | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base)
-- [\<meta\>: The Document-level Metadata element | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta)
-- [Sitelinks | Google Search Console Help](https://support.google.com/webmasters/answer/47334?hl=en)
-- [What are sitelinks and how can I get them?](https://www.searchenginewatch.com/2017/11/30/what-are-sitelinks-and-how-can-i-get-them/)
+- [head 태그에는 무엇이 있을까? HTML의 메타데이터](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
+
+- [&lt;head&gt;: 문서 메타데이터 (헤더) 요소](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)
+- [&lt;meta&gt;: 문서 레벨 메타데이터 요소](https://developer.mozilla.org/ko/docs/Web/HTML/Element/meta)
+- [&lt;title&gt;문서 정보 요소](https://developer.mozilla.org/ko/docs/Web/HTML/Element/title)
+- [&lt;link&gt;: 외부 리소스 연결 요소](https://developer.mozilla.org/ko/docs/Web/HTML/Element/link)
+- [&lt;style&gt;스타일 정보 요소](https://developer.mozilla.org/ko/docs/Web/HTML/Element/style)
+- [&lt;base&gt;](https://developer.mozilla.org/ko/docs/Web/HTML/Element/base)
+
 - [입문자에게 추천하는 HTML, CSS 첫걸음 | HEROPY Tech](https://heropy.blog/2019/04/24/html-css-starter/)
