@@ -25,7 +25,14 @@ display: block;
 > 상/하/좌/우 모두 여백이 설정된 모습
 
 - layout 작업에 최적화된 태그이다.
-- `<div>`,`<h>`,`<p>` 등 <br>
+- `<div>`,`<article>`,`<section>`,`<h>`,`<p>` 등 <br>
+
+> div vs. article vs. section
+> |태그|의미|
+> |---|---|
+> |`<div>`| 단순 영역 구분|
+> |`<section>`| `<h>` 태그(제목)을 포함하는 영역 구분|
+> |`<article>`| 독립적으로 의미를 구분하여 재사용/배포 가능한 영역 |
 
 <br>
 <br>
