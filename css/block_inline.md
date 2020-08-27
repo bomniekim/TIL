@@ -1,5 +1,8 @@
 # 블록(block) 요소 vs. 인라인(inline) 요소
 
+<br>
+<br>
+
 ## block element
 
 ```css
