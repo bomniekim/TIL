@@ -41,6 +41,8 @@ display: inline;
 
 > An inline element does not start on a new line and only takes up as much width as necessary.
 
+<br>
+<br>
 특징
 
 - `width: 0, height: 0` 으로 시작하여
