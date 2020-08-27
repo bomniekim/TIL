@@ -27,7 +27,7 @@ display: block;
 - layout 작업에 최적화된 태그이다.
 - `<div>`,`<article>`,`<section>`,`<h>`,`<p>` 등 <br>
 
-> div vs. article vs. section
+> cf) **div** vs. **article** vs. **section**
 > |태그|의미|
 > |---|---|
 > |`<div>`| 단순 영역 구분|
