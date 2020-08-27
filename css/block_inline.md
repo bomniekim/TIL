@@ -36,6 +36,11 @@ display: inline;
 - `width: 0, height: 0` 으로 시작하여
   수평으로 쌓인다.
 - margin, padding 의 위/아래 값을 지정할 수 없다.
+
+![span](./images/css/span.png)<br>
+[margin, padding으로 20px 설정한 span 요소]<br>
+위/아래에는 margin, padding 적용되지 않았다.
+
 - text 작업에 최적화된 태그이다.
 
 - `<span>`,`<img>`,`<a>`,`<strong>` 등
