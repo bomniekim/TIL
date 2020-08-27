@@ -61,9 +61,10 @@ display: inline;
 - text 작업에 최적화된 태그이다.
 
 - `<span>`,`<img>`,`<a>`,`<strong>` 등
-  <br>
-  <br>
-  <br>
+  > [블락 요소 전체 목록](https://developer.mozilla.org/ko/docs/Web/HTML/Block-level_elements#요소_목록)
+  > <br>
+  > <br>
+  > <br>
 
 ---
 
