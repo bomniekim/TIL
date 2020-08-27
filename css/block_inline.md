@@ -9,12 +9,18 @@ display: block;
 **블록 요소** 는 기본적으로 부모 요소의 전체 공간을 차지하여 사용 가능한 최대 가로 너비를 사용하여 "블록"을 만든다.
 
 > A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
-> <br> > <br>
-> 특징
+
+<br> 
+<br>
+특징
 
 - `width: 100px, height: 0` 으로 시작하여 수직으로 쌓인다.
 
 - margin, padding 의 상하좌우 모든 값을 지정하여 사용할 수 있다.
+
+> [margin, padding으로 각각 20px 설정한 div 요소] > ![div](../images/css/div.png)
+> 상/하/좌/우 모두 여백이 설정된 모습
+
 - layout 작업에 최적화된 태그이다.
 - `<div>`,`<h>`,`<p>` 등 <br>
 
@@ -37,9 +43,8 @@ display: inline;
   수평으로 쌓인다.
 - margin, padding 의 위/아래 값을 지정할 수 없다.
 
-![span](./images/css/span.png)<br>
-[margin, padding으로 20px 설정한 span 요소]<br>
-위/아래에는 margin, padding 적용되지 않았다.
+> [margin, padding으로 20px 설정한 span 요소]<br> > ![span](../images/css/span.png)<br>
+> 오른쪽/왼쪽에는 여백이 적용되었으나 위/아래에는 적용되지 않음.
 
 - text 작업에 최적화된 태그이다.
 
