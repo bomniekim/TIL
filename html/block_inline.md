@@ -35,7 +35,8 @@ display: block;
 > |`<article>`| 독립적으로 의미를 구분하여 재사용/배포 가능한 영역 |
 > <br>
 
-*[MDN 블록 요소 전체 목록](https://developer.mozilla.org/ko/docs/Web/HTML/Block-level_elements#요소*목록)\_
+_[MDN 블록 요소 전체 목록](https://developer.mozilla.org/ko/docs/Web/HTML/Block-level_elements#요소*목록)_
+<br>
 <br>
 <br>
 
