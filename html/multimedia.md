@@ -1,4 +1,4 @@
-# 이미지(&lt;img&gt;)와 멀티미디어 태그
+# 멀티미디어 태그
 
 ## `<img>`
 
@@ -73,7 +73,7 @@
 <br>
 <br>
 
-## `<video>`
+## `<audio>`
 
 문서에 소리 컨텐츠를 삽입할 때 사용하는 태그이다.
 
@@ -88,8 +88,48 @@
   - none: 로드하지 않음
   - metadata: 메타데이터만 로드(default)
   - auto/"": 사용자가 사용하지 않더라도 자동으로 로드
+    > `autoplay`와 `preload`를 함께 지정하면 `autoplay`가 우선한다.
 - `muted`: 음소거 설정
-  > `autoplay`와 `preload`를 함께 지정하면 `autoplay`가 우선한다.
+  <br>
+  <br>
+
+## `<video>`
+
+문서에 비디오 플레이백을 지원하는 동영상 컨텐츠를 삽입할 때 사용한다.
+
+#### 속성
+
+- `src` : 동영상 소스 url
+- `autoplay`
+- `controls`
+- `preload`
+- `loop`
+- `muted`
+- `poster`: 동영상 썸네일 이미지 URL
+- `width` / `height`: 동영상 가로/세로 너비
+
+<br>
+<br>
+
+## `<figure>` / `<figcaption>`
+
+브라우저에게 삽입된 이미지와 그에 관한 설명이 연결되어 있다는 개념을 알려주기 위해 사용되는 태그이다.
+
+- `<figure>`: 이미지나 삽화, 도표 등의 영역을 지정한다.
+- `<figcaption>`: `<figure>` 요소가 포함하는 이미지 등의 멀티미디어에 대한 설명을 표시한다.
+
+사용예시
+
+```html
+<figure>
+  <img src="light.jpg" alt="light image" />
+  <figcaption>
+    Light is the natural agent that stimulates sight and makes things visible.
+  </figcaption>
+</figure>
+```
+
+## <br>
 
 ---
 
@@ -98,4 +138,7 @@
 - [MDN &lt;img&gt;: 이미지 삽입 요소](https://developer.mozilla.org/ko/docs/Web/HTML/Element/img)
 - [MDN 반응형 이미지](https://developer.mozilla.org/ko/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
 - [MDN &lt;audio&gt;](https://developer.mozilla.org/ko/docs/Web/HTML/Element/audio)
+- [MDN &lt;video&gt;: 비디오 삽입 요소](https://developer.mozilla.org/ko/docs/Web/HTML/Element/Video)
+- [MDN &lt;figure&gt;](https://developer.mozilla.org/ko/docs/Web/HTML/Element/figure)
+- [MDN &lt;figcaption&gt;](https://developer.mozilla.org/ko/docs/Web/HTML/Element/figcaption)
 - [HTML IMG의 srcset과 sizes 속성 by heropy](https://heropy.blog/2019/06/16/html-img-srcset-and-sizes/)
