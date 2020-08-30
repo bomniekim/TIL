@@ -169,9 +169,52 @@ Canvas API이나 WebGL API를 사용하여 그래픽이나 애니메이션을 �
 
 ## `<script>`
 
-스크립트 코드를 문서에 포함하거나 스크립트를 참조할 때 사용하는 태그이다.
+스크립트 코드를 문서에 포함하거나 외부 스크립트를 참조할 때 사용하는 태그이다.
 
-<iframe width="951" height="535" src="https://www.youtube.com/embed/tJieVCgGzhs" frameborder="0" allow="accelerometer;encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#### 속성
+
+- `src` : 스크립트 소스 url
+- `type` : [MIME 타입](https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/MIME_types) 설정
+- `async`: 스크립트의 비동기적 실행 여부 (`src` 속성 필수)
+- `defer`: 문서 파싱(구문 분석) 후 작동 여부 (`src` 속성 필수)
+
+<br>
+
+> cf) 문서 내 `<script>`위치에 따른 스크립트 파싱과 실행 과정
+
+- `<head>` 태그 내 포함 시
+  ![head](../images/html/head.png)
+
+  😡사용자가 웹 사이트를 보는 데까지 많은 시간 소요
+
+- `<body>` 태그 내 포함 시
+  ![body](../images/html/body.png)
+
+  😊기본적인 컨텐츠를 빨리 볼 수 있음 <br>
+  😡자바스크립트에 의존적인 문서인 경우 정상적인 페이지를 보는데 오래 걸림
+
+- `async` <br>
+  html 문서와 js 파일을 병렬적으로 파싱
+  ![async](../images/html/async.png)
+  😊병렬적으로 파싱하므로 다운로드 시간을 줄일 수 있음<br>
+  😡html 파싱 전에 js가 실행되므로 원하는 DOM 요소의 조작에 제약을 받음<br>
+  😡정의된 스크립트의 순서에 상관없이 다운로드 순으로 실행되어 실행 순서가 중요한 경우 문제가 될 수 있음
+
+- `defer`
+  문서를 파싱하는 동안 필요한 js 파일을 전부 다운받은 후에 순차적으로 실행됨
+  ![defer](../images/html/defer.png)
+  😊가장 효율적이고 안전함
+
+```html
+<iframe
+  width="951"
+  height="535"
+  src="https://www.youtube.com/embed/tJieVCgGzhs"
+  frameborder="0"
+  allow="accelerometer;encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+```
 
 ---
 
