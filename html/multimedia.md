@@ -183,9 +183,9 @@ Canvas API이나 WebGL API를 사용하여 그래픽이나 애니메이션을 �
 > cf) 문서 내 `<script>`위치에 따른 스크립트 파싱과 실행 과정
 
 - `<head>` 태그 내 포함 시
-  ![head](../images/html/head.png)
 
   😡사용자가 웹 사이트를 보는 데까지 많은 시간 소요
+  ![head](../images/html/head.png)
 
 - `<body>` 태그 내 포함 시
   ![body](../images/html/body.png)
@@ -193,28 +193,40 @@ Canvas API이나 WebGL API를 사용하여 그래픽이나 애니메이션을 �
   😊기본적인 컨텐츠를 빨리 볼 수 있음 <br>
   😡자바스크립트에 의존적인 문서인 경우 정상적인 페이지를 보는데 오래 걸림
 
-- `async` <br>
-  html 문서와 js 파일을 병렬적으로 파싱
-  ![async](../images/html/async.png)
+- `async`
+
+  html 문서와 js 파일을 병렬적으로 파싱<br>
+
   😊병렬적으로 파싱하므로 다운로드 시간을 줄일 수 있음<br>
   😡html 파싱 전에 js가 실행되므로 원하는 DOM 요소의 조작에 제약을 받음<br>
   😡정의된 스크립트의 순서에 상관없이 다운로드 순으로 실행되어 실행 순서가 중요한 경우 문제가 될 수 있음
+  ![async](../images/html/async.png)
 
 - `defer`
-  문서를 파싱하는 동안 필요한 js 파일을 전부 다운받은 후에 순차적으로 실행됨
-  ![defer](../images/html/defer.png)
+
+  문서를 파싱하는 동안 필요한 js 파일을 전부 다운받은 후에 순차적으로 실행됨<br>
   😊가장 효율적이고 안전함
+  ![defer](../images/html/defer.png)
+
+<br>
+<br>
+
+## `<noscript>`
+
+문서의 스크립트 유형을 지원하지 않거나, 브라우저가 스크립트를 비활성화한 경우 보여줄 HTML 구획을 지정한다.
+
+<br>
+
+사용예시
 
 ```html
-<iframe
-  width="951"
-  height="535"
-  src="https://www.youtube.com/embed/tJieVCgGzhs"
-  frameborder="0"
-  allow="accelerometer;encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen
-></iframe>
+<noscript>
+  <p>Your browser does not support JavaScript!</p>
+</noscript>
 ```
+
+<br>
+<br>
 
 ---
 
