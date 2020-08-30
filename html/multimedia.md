@@ -1,17 +1,12 @@
 # 이미지(&lt;img&gt;)와 멀티미디어 태그
 
-- &lt;img&gt;
-- &lt;audio&gt;
-- &lt;video&gt;
-- &lt;img&gt;
-- &lt;img&gt;
-
 ## `<img>`
 
 문서에 이미지를 삽입할 때 사용하는 태그이다.
 
 <br>
-속성
+
+#### 속성
 
 - `src` : **(필수)** 이미지 url
 - `alt` : **(필수)** 이미지의 대체 텍스트 설명
@@ -74,3 +69,33 @@
 - 미디어 조건을 생략한 경우, <br>뷰포트 너비와 상관없이 `sizes`에 설정한 크기의 이미지만 사용한다.
 
 - sizes와 width를 같이 작성할 경우 width가 우선한다.
+
+<br>
+<br>
+
+## `<video>`
+
+문서에 소리 컨텐츠를 삽입할 때 사용하는 태그이다.
+
+#### 속성
+
+- `src`: 오디오 소스 url
+- `autoplay`: 전체 오디오 파일의 다운로드를 기다리지 않고 가능한 빠른 시점에 재생을 시작한다.
+  > [autoplay 설정 유의사항](https://developer.mozilla.org/ko/docs/Web/HTML/Element/audio#attr-autoplay)
+- `controls`: 오디오 재생, 볼륨, 탐색, 일시 정지의 제어 메뉴를 표시한다.
+- `loop`: 재생이 끝나면 다시 처음부터 재생한다.
+- `preload`: 페이지가 로드될 때 파일을 로드할지의 지정한다.(힌트 제공)
+  - none: 로드하지 않음
+  - metadata: 메타데이터만 로드(default)
+  - auto/"": 사용자가 사용하지 않더라도 자동으로 로드
+- `muted`: 음소거 설정
+  > `autoplay`와 `preload`를 함께 지정하면 `autoplay`가 우선한다.
+
+---
+
+### References
+
+- [MDN &lt;img&gt;: 이미지 삽입 요소](https://developer.mozilla.org/ko/docs/Web/HTML/Element/img)
+- [MDN 반응형 이미지](https://developer.mozilla.org/ko/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
+- [MDN &lt;audio&gt;](https://developer.mozilla.org/ko/docs/Web/HTML/Element/audio)
+- [HTML IMG의 srcset과 sizes 속성 by heropy](https://heropy.blog/2019/06/16/html-img-srcset-and-sizes/)
