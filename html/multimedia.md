@@ -227,3 +227,4 @@ Canvas API이나 WebGL API를 사용하여 그래픽이나 애니메이션을 �
 - [MDN &lt;figure&gt;](https://developer.mozilla.org/ko/docs/Web/HTML/Element/figure)/ [MDN &lt;figcaption&gt;](https://developer.mozilla.org/ko/docs/Web/HTML/Element/figcaption)
 - [MDN &lt;iframe&gt;: The Inline Frame element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)
 - [HTML IMG의 srcset과 sizes 속성 by heropy](https://heropy.blog/2019/06/16/html-img-srcset-and-sizes/)
+- [script async 와 defer의 차이점 by dreamcoding ellie](https://www.youtube.com/watch?v=tJieVCgGzhs)
