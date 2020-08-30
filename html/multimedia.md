@@ -188,10 +188,10 @@ Canvas API이나 WebGL API를 사용하여 그래픽이나 애니메이션을 �
   ![head](../images/html/head.png)
 
 - `<body>` 태그 내 포함 시
-  ![body](../images/html/body.png)
 
   😊기본적인 컨텐츠를 빨리 볼 수 있음 <br>
   😡자바스크립트에 의존적인 문서인 경우 정상적인 페이지를 보는데 오래 걸림
+  ![body](../images/html/body.png)
 
 - `async`
 
@@ -205,6 +205,7 @@ Canvas API이나 WebGL API를 사용하여 그래픽이나 애니메이션을 �
 - `defer`
 
   문서를 파싱하는 동안 필요한 js 파일을 전부 다운받은 후에 순차적으로 실행됨<br>
+
   😊가장 효율적이고 안전함
   ![defer](../images/html/defer.png)
 
