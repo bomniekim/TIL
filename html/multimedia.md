@@ -129,7 +129,47 @@
 </figure>
 ```
 
-## <br>
+<br>
+<br>
+
+# 내장 컨텐츠 태그
+
+<br>
+
+## `<iframe>`
+
+중첩 브라우징 맥락을 나타내는 요소로 현재 문서 안에 다른 HTML 페이지를 삽입할 때 사용한다.
+
+#### 속성
+
+- `src`
+- `width`(default: 300) / `height`(default: 150)
+- `allowfullscreen`: 전체 화면 모드 사용 여부
+- `sandbox`: 보안을 위한 추가적인 제약조건을 설정
+
+  - allow-forms: 양식 제출 가능
+  - allow-scripts: 스크립트 실행 가능
+  - allow-same-origin: 같은 출처(도메인)의 리소스 사용 가능
+    > [sandbox 속성 보기](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox)
+
+<br>
+
+## `<canvas>`
+
+Canvas API이나 WebGL API를 사용하여 그래픽이나 애니메이션을 랜더링할 때 사용한다.
+
+> [MDN Canvas API](https://developer.mozilla.org/ko/docs/Web/HTML/Canvas)
+
+<br>
+<br>
+
+# 스크립트 태그
+
+<br>
+
+## `<script>`
+
+스크립트 코드를 문서에 포함하거나 스크립트를 참조할 때 사용하는 태그이다.
 
 ---
 
@@ -139,6 +179,6 @@
 - [MDN 반응형 이미지](https://developer.mozilla.org/ko/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
 - [MDN &lt;audio&gt;](https://developer.mozilla.org/ko/docs/Web/HTML/Element/audio)
 - [MDN &lt;video&gt;: 비디오 삽입 요소](https://developer.mozilla.org/ko/docs/Web/HTML/Element/Video)
-- [MDN &lt;figure&gt;](https://developer.mozilla.org/ko/docs/Web/HTML/Element/figure)
-- [MDN &lt;figcaption&gt;](https://developer.mozilla.org/ko/docs/Web/HTML/Element/figcaption)
+- [MDN &lt;figure&gt;](https://developer.mozilla.org/ko/docs/Web/HTML/Element/figure)/ [MDN &lt;figcaption&gt;](https://developer.mozilla.org/ko/docs/Web/HTML/Element/figcaption)
+- [MDN &lt;iframe&gt;: The Inline Frame element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)
 - [HTML IMG의 srcset과 sizes 속성 by heropy](https://heropy.blog/2019/06/16/html-img-srcset-and-sizes/)
