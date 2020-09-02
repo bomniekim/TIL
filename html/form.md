@@ -62,6 +62,36 @@
 - `maxlength`: 입력 값의 최대 길이(length) 지정
 - `value`: `<input>`의 초기 값
 
+<br>
+<br>
+<br>
+
+## `<label>`
+
+사용자 인터페이스 항목의 설명을 나타낸다.<br>
+라벨 가능 요소(labelable)의 제목(Caption)이다.
+
+> 레벨 가능 요소: `<button>`, `<input>`, `<progress>`, `<select>`, `<textarea>`
+
+- `for` 속성으로 라벨 가능 요소를 참조하거나 콘텐츠로 포함한다.
+
+<br>
+
+사용예시
+
+- `<label>`의 컨텐츠 텍스트를 클릭하면, `for` 속성으로 참조된 체크박스가 선택된다.
+
+```html
+<input type="checkbox" id="user-agreement" />
+<label for="user-agreement">Do you agree?</label>
+```
+
+- `<label>` 에 포함된 어느 것을 눌러도 체크박스가 선택된다. **(권장)**
+
+```html
+<label><input type="checkbox" />Do you agree?</label>
+```
+
 ---
 
 ### References
