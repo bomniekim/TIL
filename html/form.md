@@ -255,3 +255,5 @@
 - [MDN &lt;input&gt;: 입력요소](https://developer.mozilla.org/ko/docs/Web/HTML/Element/input)
 - [MDN &lt;label&gt;](https://developer.mozilla.org/ko/docs/Web/HTML/Element/Label)
 - [MDN &lt;button&gt;: 버튼요소](https://developer.mozilla.org/ko/docs/Web/HTML/Element/Button)
+- [MDN &lt;option&gt;](https://developer.mozilla.org/ko/docs/Web/HTML/Element/option)
+- [한눈에 보는 HTML 요소 총정리 by heropy](https://heropy.blog/2019/05/26/html-elements/#yangsig)
