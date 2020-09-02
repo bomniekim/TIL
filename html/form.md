@@ -156,6 +156,19 @@
 
 옵션을 선택하는 메뉴를 나타낸다.
 
+사용예시
+
+```html
+<label for="fruits">Fruits</label>
+<select name="fruits" id="fruits">
+  <option value="apple">Apple</option>
+  <option value="mango">Mango</option>
+  <option value="banana">Banana</option>
+</select>
+```
+
+## <img src="../images/html/select.png" width="170">
+
 ---
 
 ### References
