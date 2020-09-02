@@ -114,7 +114,7 @@
   - button : 일반 버튼 ( form 제출용 버튼이 아니라면 type 값을 button으로 지정)
 - `form`: `<form>` 요소 외부에 작성할 때 연결하려는 `<form>` `id` 값을 지정
 
-> `<button>` 요소는 `<input>` 요소보다 스타일을 적용하기 훨씬 수월하다. `<input>`은 value 특성에 텍스트 값밖에 지정할 수 없지만,` <button>`은 내부 HTML 콘텐츠(`<em>`, `<strong>`, 심지어 `<img>`도)에 더해 ::after와 ::before 의 CSS 요소를 사용하는 복잡한 렌더링도 가능하다.
+> `<button>` 요소는 `<input>` 요소보다 스타일을 적용하기 훨씬 수월하다. `<input>`은 value 특성에 텍스트 값밖에 지정할 수 없지만,<br>` <button>`은 내부 HTML 콘텐츠(`<em>`, `<strong>`, 심지어 `<img>`도)에 더해 ::after와 ::before 의 CSS 요소를 사용하는 복잡한 렌더링도 가능.
 
 <br>
 <br>
