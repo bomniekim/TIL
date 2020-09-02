@@ -146,7 +146,7 @@
 </form>
 ```
 
-<img src="../images/html/fieldset.png" width="400">
+<img src="../images/html/fieldset.png" width="500">
 
 <br>
 <br>
@@ -167,7 +167,85 @@
 </select>
 ```
 
-## <img src="../images/html/select.png" width="170">
+<img src="../images/html/select.png" width="170">
+
+<br>
+<br>
+
+#### 속성
+
+- `multiple`: 다수의 옵션 선택 가능
+- `size`: 스크롤 가능한 목록 상자에서 한 번에 볼 수 있는 옵션의 행 수를 지정
+
+<br>
+<br>
+<br>
+
+## `<datalist>`
+
+`<input>`에 미리 정의된 옵션을 지정하여 자동완성(Autocomplete) 기능을 제공하는 데 사용한다.
+
+- `<input>`의 `list` 값과 `<datalist>`의 `id` 값을 일치시켜 연결한다.
+- `<option>` 요소를 사용하여 자동완성 옵션을 제공한다.
+
+<br>
+
+사용예시
+
+```html
+<input type="text" list="snacks" />
+
+<datalist id="snacks">
+  <option>Choco-Pie</option>
+  <option>Margaret</option>
+  <option>ChikChok</option>
+  <option>HomerunBall</option>
+</datalist>
+```
+
+<img src="../images/html/datalist.png" width="170">
+
+<br>
+<br>
+<br>
+
+## `<option>` / `<optgroup>`
+
+`<option>`은 선택 메뉴(`<select>`)나 자동완성(`<datalist>`)에서 하나의 항목을 나타내며,
+`<optgroup>`은 이러한 `<option>`을 그룹화한다.
+
+<br>
+
+### `<option>`
+
+- `selected`: 옵션이 선택된 상태임을 표시한다.
+- `value`: 데이터의 값. 값을 지정하지 않으면 요소의 텍스트 콘텐츠가 값으로 사용된다.
+- 선택적 빈 태그(empty tag)로 사용 가능하다.
+
+### `<optgroup>`
+
+- `label`: **(필수)** 옵션 그룹의 이름을 설정한다. label을 사용
+
+<br>
+
+사용예시
+
+```html
+<label for="language">Programming Language</label>
+<select id="language">
+  <optgroup label="front-end">
+    <option>HTML</option>
+    <option>CSS</option>
+    <option selected>JavaScript</option>
+  </optgroup>
+  <optgroup label="back-end">
+    <option>Java</option>
+    <option>Python</option>
+  </optgroup>
+</select>
+```
+
+<img src="../images/html/optgroup.png" width="300">
 
 ---
 
