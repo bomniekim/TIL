@@ -51,6 +51,8 @@
   | reset    | 초기화                    | 해당 `<form>` 범위 내 모든 초기화           |
   | hidden   | 보이지 않지만 전송할 양식 | `value` 속성으로 값을 지정                  |
 
+<br>
+
 - `autofocus` : 페이지가 로드될 때 자동으로 포커스
   > 문서 내 하나의 `<input>` 에만 지정해야 함
 - `form`: `<form>`의 자식 요소가 아닌 바깥에 `<input>`을 작성한 경우 `<form>` 요소의 `id` 값을 이용해 연결
@@ -73,13 +75,13 @@
 
 > 레벨 가능 요소: `<button>`, `<input>`, `<progress>`, `<select>`, `<textarea>`
 
-- `for` 속성으로 라벨 가능 요소를 참조하거나 콘텐츠로 포함한다.
+- `for` 속성으로 라벨 가능 요소의 `id`와 연결하여 참조하거나 콘텐츠로 포함한다.
 
 <br>
 
 사용예시
 
-- `<label>`의 컨텐츠 텍스트를 클릭하면, `for` 속성으로 참조된 체크박스가 선택된다.
+- `<label>`의 콘텐츠 텍스트를 클릭하면, `for` 속성으로 참조된 체크박스가 선택된다.
 
 ```html
 <input type="checkbox" id="user-agreement" />
@@ -92,9 +94,39 @@
 <label><input type="checkbox" />Do you agree?</label>
 ```
 
+- `<label>` 내에 `<a>` 또는 `<button>`와 같은 인터랙티브 요소를 배치하지 않는다. 사용자가 `label`과 관련된 양식을 입력하기 어려움.
+- `<label>` 내에 제목 요소(`<h1>`-`<h6>`)를 배치하면 많은 종류의 보조 기술을 방해하므로 제목이 필요한 경우 `<fieldset>` 내에 배치 된 `<legend>` 요소를 사용함.
+
+  <br>
+  <br>
+
+## `<button>`
+
+선택 가능한 버튼을 지정한다. form 과 상관없이 간단한 표준 버튼 기능이 필요한 곳이라면 문서 내 어디에나 배치할 수 있다.
+
+#### 속성
+
+- `type`
+  - submit : form 제출
+  - reset : 초기화
+  - button : 일반 버튼 ( form 제출용 버튼이 아니라면 type 값을 button으로 지정)
+- `form`: `<form>` 요소 외부에 작성할 때 연결하려는 `<form>` `id` 값을 지정
+
+> `<button>` 요소는 `<input>` 요소보다 스타일을 적용하기 훨씬 수월하다. `<input>`은 value 특성에 텍스트 값밖에 지정할 수 없지만,` <button>`은 내부 HTML 콘텐츠(`<em>`, `<strong>`, 심지어 `<img>`도)에 더해 ::after와 ::before 의 CSS 요소를 사용하는 복잡한 렌더링도 가능하다.
+
+<br>
+<br>
+<br>
+
+## `<fieldset>` / `<legend>`
+
+같은 목적의 `form`을 그룹화(`<fieldset>`)하여 제목(`<legend>`)을 지정한다.
+
 ---
 
 ### References
 
 - [MDN &lt;form&gt;](https://developer.mozilla.org/ko/docs/Web/HTML/Element/form)
 - [MDN &lt;input&gt;: 입력요소](https://developer.mozilla.org/ko/docs/Web/HTML/Element/input)
+- [MDN &lt;label&gt;](https://developer.mozilla.org/ko/docs/Web/HTML/Element/Label)
+- [MDN &lt;button&gt;: 버튼요소](https://developer.mozilla.org/ko/docs/Web/HTML/Element/Button)
