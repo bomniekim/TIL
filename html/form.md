@@ -46,7 +46,7 @@
 - `list`: 참조할 `<datalist>`의 `id` 값을 이용해 연결
 - `multiple`: 둘 이상의 값을 입력 할 수 있는지 여부
   > `type` 값이 `email`, `file` 인 경우에만 지정 가능 <br> > `email`인 경우 `,`로 구분
-- `step`: 유효한 숫자의 증감 간격 지정
+- `step`: 유효한 숫자의 증감 간격 지정
 - `max` / `min`: 입력 가능한 숫자 최대값/최소값 지정
 - `maxlength`: 입력 값의 최대 길이(length) 지정
 - `value`: `<input>`의 초기 값
