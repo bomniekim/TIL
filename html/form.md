@@ -203,7 +203,7 @@
 </datalist>
 ```
 
-<img src="../images/html/datalist.png" width="170">
+<img src="../images/html/datalist.png" width="300">
 
 <br>
 <br>
