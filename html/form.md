@@ -167,7 +167,7 @@
 </select>
 ```
 
-<img src="../images/html/select.png" width="170">
+<img src="../images/html/select.png" width="200">
 
 <br>
 <br>
@@ -245,7 +245,7 @@
 </select>
 ```
 
-<img src="../images/html/optgroup.png" width="300">
+<img src="../images/html/optgroup.png" width="350">
 
 ---
 
