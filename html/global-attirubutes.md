@@ -72,4 +72,4 @@ console.log($me.dataset.myName); // "BominKim"
 console.log($me.dataset.myColor); // "blue"
 ```
 
-<img src="../images/html/data.png" width="300">
+<img src="../images/html/data.png" width="500">
