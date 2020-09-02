@@ -100,4 +100,4 @@ console.log(me.dataset.myColor); // "blue"
 <button form="hidden-form" type="submit">전송</button>
 ```
 
-> &lt;form&gt; 에 `hidden` 속성을 부여하여 `<input>`이 렌더링 되지는 않지만 [전송] 버튼 클릭 시 `file:///form-action?id=bomnie` url로 데이터가 전송된 것을 확인할 수 있다.
+> &lt;form&gt; 에 `hidden` 속성을 부여하여 `<input>`이 렌더링 되지는 않지만 <br>[전송] 버튼 클릭 시 `file:///form-action?id=bomnie` url로 데이터가 전송된 것을 확인할 수 있다.
