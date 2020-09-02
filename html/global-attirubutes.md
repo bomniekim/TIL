@@ -116,8 +116,8 @@ console.log(me.dataset.myColor); // "blue"
 - tabindex="1" 이상의 양수 값은 논리적 흐름을 방해하기 때문에 사용을 추천하지 않는다.
 
 <br>
-
-## `tabindex`
+<br>
+<br>
 
 ---
 
