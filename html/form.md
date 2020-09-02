@@ -51,7 +51,7 @@
 - `maxlength`: 입력 값의 최대 길이(length) 지정
 - `value`: `<input>`의 초기 값
 - `type`: 입력받을 데이터의 종류
-  > ⭐️[type에 입력할 수 있는 값의 목록](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#types)
+  > **[type에 입력할 수 있는 값의 목록](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#types) 참고하세요. 매우 중요!**
 
 ---
 
