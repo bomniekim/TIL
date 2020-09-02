@@ -146,7 +146,7 @@
 </form>
 ```
 
-![fieldset](../images/html/fieldset.png)
+<img src="../images/html/fieldset.png" width="400">
 
 <br>
 <br>
