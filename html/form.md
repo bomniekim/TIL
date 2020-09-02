@@ -124,6 +124,38 @@
 
 같은 목적의 `form`을 그룹화(`<fieldset>`)하여 제목(`<legend>`)을 지정한다.
 
+사용예시
+
+```html
+<form>
+  <fieldset>
+    <legend>Coffee Size</legend>
+    <label>
+      <input type="radio" name="size" value="tall" />
+      Tall
+    </label>
+    <label>
+      <input type="radio" name="size" value="grande" />
+      Grande
+    </label>
+    <label>
+      <input type="radio" name="size" value="venti" />
+      Venti
+    </label>
+  </fieldset>
+</form>
+```
+
+![fieldset](../images/html/fieldset.png)
+
+<br>
+<br>
+<br>
+
+## `<select>`
+
+옵션을 선택하는 메뉴를 나타낸다.
+
 ---
 
 ### References
