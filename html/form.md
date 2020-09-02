@@ -38,7 +38,18 @@
 
 #### 속성
 
-- `autocomplete`
+- `type`: 입력받을 데이터의 종류
+
+  > **[type에 입력할 수 있는 값의 목록](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#<input>_types) 참고하세요. 매우 중요!**
+
+  | 값       | 데이터 종류               | 특징                                        |
+  | -------- | ------------------------- | ------------------------------------------- |
+  | button   | 일반 버튼                 | `<button>`처럼 사용                         |
+  | checkbox | 체크박스                  |                                             |
+  | image    | 이미지 제출 버튼          | `submit`과 같은 기능을 하면서 이미지를 제공 |
+  | radio    | 라디오 버튼               | 같은 `name` 그룹 내에서 하나만 선택 가능    |
+  | reset    | 초기화                    | 해당 `<form>` 범위 내 모든 초기화           |
+  | hidden   | 보이지 않지만 전송할 양식 | `value` 속성으로 값을 지정                  |
 
 - `autofocus` : 페이지가 로드될 때 자동으로 포커스
   > 문서 내 하나의 `<input>` 에만 지정해야 함
@@ -50,8 +61,6 @@
 - `max` / `min`: 입력 가능한 숫자 최대값/최소값 지정
 - `maxlength`: 입력 값의 최대 길이(length) 지정
 - `value`: `<input>`의 초기 값
-- `type`: 입력받을 데이터의 종류
-  > **[type에 입력할 수 있는 값의 목록](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#types) 참고하세요. 매우 중요!**
 
 ---
 
