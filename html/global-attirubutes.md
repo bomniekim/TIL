@@ -68,8 +68,36 @@
 ```javascript
 // dataset.customDataAttributes
 const me = document.getElementById("me");
-console.log($me.dataset.myName); // "BominKim"
-console.log($me.dataset.myColor); // "blue"
+console.log(me.dataset.myName); // "BominKim"
+console.log(me.dataset.myColor); // "blue"
 ```
 
 <img src="../images/html/data.png" width="500">
+
+<br>
+<br>
+<br>
+
+## `draggable`
+
+요소가 [Drag and Drop API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API)를 사용 가능한지 여부를 지정한다.
+이 속성을 지정하면 해당 요소를 드래그(Drag)할 수 있다. 기본값은 auto 이므로, 드래그 하기를 원하면 아래와 같이 draggable="true"라고 지정해야 한다.
+
+```html
+<div draggable="true">Drag it!</div>
+```
+
+<br>
+
+## `hidden`
+
+해당 요소가 아직(not yet), 또는 더 이상(no longer) 관련이 없음을 나타내는 Boolean 속성이다. 브라우저는 hidden 속성을 설정한 요소를 렌더링 하지 않기에 요소를 숨길 때 사용한다.
+
+```html
+<form id="hidden-form" action="/form-action" hidden>
+  <input type="text" name="id" value="bomnie" />
+</form>
+<button form="hidden-form" type="submit">전송</button>
+```
+
+> &lt;form&gt; 에 `hidden` 속성을 부여하여 `<input>`이 렌더링 되지는 않지만 [전송] 버튼 클릭 시 `file:///form-action?id=bomnie` url로 데이터가 전송된 것을 확인할 수 있다.
