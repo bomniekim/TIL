@@ -101,3 +101,27 @@ console.log(me.dataset.myColor); // "blue"
 ```
 
 > &lt;form&gt; 에 `hidden` 속성을 부여하여 `<input>`이 렌더링 되지는 않지만 <br>[전송] 버튼 클릭 시 `file:///form-action?id=bomnie` url로 데이터가 전송된 것을 확인할 수 있다.
+
+<br>
+<br>
+
+## `tabindex`
+
+<kbd>Tab</kbd> 키를 이용해 요소를 순차적으로 포커스(Focus)하며 탐색할 순서를 지정한다.
+
+- [대화형 콘텐츠(Interactive Content)](https://developer.mozilla.org/ko/docs/Web/Guide/HTML/Content_categories#%EB%8C%80%ED%99%94%ED%98%95_%EC%BD%98%ED%85%90%EC%B8%A0)는 기본적으로 코드 순서대로 탭 순서가 지정된다. (default: tabindex="0")
+- 비대화형 콘텐츠에 tabindex="0"을 지정하면 대화형 콘텐츠와 같이 탭 순서를 사용한다.
+  > 단, 비대화형 요소를 사용해 만든 대화형 컴포넌트는 접근성 트리에 나타나지 않으므로, 보조 기술이 해당 컴포넌트로 탐색하거나 조작하는 것을 방지한다.
+- tabindex="-1"로 설정하면 포커스는 가능하지만 탭 순서에서 제외된다.
+- tabindex="1" 이상의 양수 값은 논리적 흐름을 방해하기 때문에 사용을 추천하지 않는다.
+
+<br>
+
+## `tabindex`
+
+---
+
+### References
+
+- [MDN global attributes](https://developer.mozilla.org/ko/docs/Web/HTML/Global_attributes)
+- [한눈에 보는 HTML 요소 [전역 속성] by heropy](https://heropy.blog/2019/05/26/html-elements/#jeonyeog-sogseong-global-attributes)
