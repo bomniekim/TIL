@@ -64,6 +64,7 @@
 - `step`: 유효한 숫자의 증감 간격 지정
 - `max` / `min`: 입력 가능한 숫자 최대값/최소값 지정
 - `maxlength`: 입력 값의 최대 길이(length) 지정
+- `name`: `<input>`의 이름, GET 방식으로 전송하는 경우 ? 뒤에 붙는 key 값
 - `value`: `<input>`의 초기 값
 
 <br>
