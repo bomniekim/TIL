@@ -62,3 +62,49 @@
 부모를 기준으로 특정한 자식 요소를 선택한다.
 
 > **div > ul**<br>> div의 자식 요소 `<ul>`을 선택
+
+<br>
+
+### 3) 후손(하위) 선택자(Descendant Combinator)
+
+특정 선택자를 기준으로 그 후손(하위) 요소를 선택한다.
+<br> _띄어쓰기_ 가 선택자의 기호로 사용된다.
+
+> **span .app**<br>> span의 하위 `class` 중 값이 app인 요소를 선택 (span은 조건일 뿐!)
+
+<br>
+
+### 4) 인접 형제 선택자(Adjacent Sibling Combinator)
+
+특정 선택자의 다음 형제 요소 하나만 선택한다.
+
+> **.app + li**
+
+```html
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li class="app">JS</li>
+  <li>Java</li>
+  <!-- Java가 선택됨 -->
+</ul>
+```
+
+<br>
+
+### 5) 일반 형제 선택자(General Sibling Combinator)
+
+특정 선택자의 다음 모든 형제 요소를 선택한다.
+
+> **.app ~ li**
+
+```html
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li class="app">JS</li>
+  <li>Java</li>
+  <li>Python</li>
+  <!-- Java, Python 선택됨 -->
+</ul>
+```
