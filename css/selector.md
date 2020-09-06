@@ -264,14 +264,45 @@
 
 해당하지 않는 모든 요소를 선택한다.
 
-> p:
+> __li:not(.app)__<br>> `li`중에 `class`가 app이 아닌 모든 요소를 선택
 
 <br>
-
-
 <br>
 <br>
 
 ## 4. 가상 요소 선택자(Pseudo-Elements Selector)
 
+요소의 특정 부분에 스타일을 적용하기 위하여 사용된다.<br>가상 요소에는 __두개의 콜론(::)__ 을 사용한다. CSS 표준에 의해 미리 정의된 이름이 있기 때문에 임의의 이름을 사용할 수 없다.
+
+<br>
+
+### 1) before
+
+> __li::before__ <br> > li 요소 __내부의 앞__ 에, 내용(content)을 삽입
+
+```css
+div::before {
+ content: "<";
+ color: tomato;
+}
+
+div::after {
+ content: ">";
+ color: tomato;
+}
+```
+```html
+<div>tag</div>
+```
+
+<img src="../images/css/tag.png" width="200">
+
+<br>
+
+### 2) after
+
+
+
+---
+### References
 https://poiemaweb.com/css3-selector
