@@ -108,3 +108,45 @@
   <!-- Java, Python 선택됨 -->
 </ul>
 ```
+
+<br>
+<br>
+<br>
+
+## 3. 가상 클래스 선택자(Pseudo-Class Selector)
+
+요소의 특정 상태에 따라 스타일을 정의할 때 사용된다.
+특정 상태에는 원래 클래스가 존재하지 않지만 가상 클래스를 임의로 지정하여 선택하는 방법이다.
+
+가상 클래스는 마침표(.) 대신 **콜론(:)을 사용** 한다. CSS 표준에 의해 미리 정의된 이름이 있기 때문에 임의의 이름을 사용할 수 없다.
+
+<br>
+<br>
+
+### 3.1. 링크 셀렉터(Link Pseudo-Classes), 동적 셀렉터(User action Pseudo-Classes)
+
+<br>
+
+### 1) hover
+
+> **a:hover**<br>> `a`에 마우스(포인터)가 올라가 있는 동안만 선택
+
+### 2) active
+
+> **a:active**<br>> `a`를 마우스로 클릭하는 동안에만 선택
+
+### 3) focus
+
+> **input:focus**<br>> `input`이 포커스 되어있는 동안에만 선택<br> [대화형 콘텐츠](https://developer.mozilla.org/ko/docs/Web/Guide/HTML/Content_categories#%EB%8C%80%ED%99%94%ED%98%95_%EC%BD%98%ED%85%90%EC%B8%A0)에서 사용 가능
+
+### 4) link, visited
+
+> **a:link**<br>> `a`가 방문하지 않은 링크일 때 <br> > **a:visited**<br>> `a`가 방문한 링크일 때
+
+<br>
+<br>
+<br>
+
+## 4. 가상 요소 선택자(Pseudo-Elements Selector)
+
+https://poiemaweb.com/css3-selector
