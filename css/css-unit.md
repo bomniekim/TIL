@@ -39,7 +39,26 @@ div {
 }
 ```
 
-em은 자기 자신의 font-size에 영향을 받는다.
+#### `em`은 자기 자신의 `font-size`에 영향을 받는다.
+<br>
+
+```html
+<body class="parent">
+    parent
+    <div class="child">child</div>
+</body>
+```
+```css
+.parent {
+    font-size: 2em; /* 16px * 2 = 32px */
+    width: 10em; /* 32px * 10 = 320px */
+}
+
+.child {
+    font-size: 1.2em; /* 32px * 1.2 = 38.4px */
+    width: 10em; /* 38.4px * 10 = 384px */
+}
+```
 
 
 <br>
@@ -48,7 +67,7 @@ em은 자기 자신의 font-size에 영향을 받는다.
 
 `rem`은 __최상위 요소(html)의 사이즈__ 를 기준으로 삼는 상대 단위이다.<br>em과 달리 최상위 부모의 값(하나)을 기준으로 하기 때문에 중첩된 자식 요소에서도 크기를 지정하는데 혼동없이 사용할 수 있다는 장점을 가진다.
 
-`<html>`의 `font-size`는 브라우저마다 다르며, reset-css 등의 라이브러리를 사용하는 경우 사이즈 지정이 되어있지 않은 상태이므로 기본 값을 사용하거나 사용자가 직접 값을 지정할 수 있다.
+`<html>`의 `font-size`는 브라우저마다 다르며, reset-css 등의 라이브러리를 사용하는 경우 사이즈 지정이 되어있지 않은 상태이므로<br>기본 값을 사용하거나 아래와 같이 사용자가 직접 값을 지정할 수 있다.
 
 ```css
 html {
