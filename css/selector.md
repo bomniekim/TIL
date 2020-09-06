@@ -381,11 +381,10 @@ div[class*="test"] {
 ```
 
 <br>
-
-
-
+<br>
 
 
 ---
 ### References
-https://poiemaweb.com/css3-selector
+- https://poiemaweb.com/css3-selector
+- [MDN CSS 선택자](https://developer.mozilla.org/ko/docs/Learn/CSS/Building_blocks/%EC%84%A0%ED%83%9D%EC%9E%90)
