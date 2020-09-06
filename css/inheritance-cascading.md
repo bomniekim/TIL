@@ -80,7 +80,6 @@ __상속__ 이란 상위(부모, 조상) 요소에 적용된 프로퍼티를 하
 
 ---
 
-
 ### References
 - https://poiemaweb.com/css3-inheritance-cascading
 - [MDN CSS 명시도](https://developer.mozilla.org/ko/docs/Web/CSS/Specificity)
