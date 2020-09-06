@@ -55,8 +55,7 @@ __상속__ 이란 상위(부모, 조상) 요소에 적용된 프로퍼티를 하
 <br>대상을 명확하게 특정할수록 명시도가 높아지고 우선순위가 높아진다.
 <br><br>[명시도의 점수]<br><br>1&rpar; 가장 중요(<code>!important</code>): 모든 선언을 무시하고 가장 우선한다. (`∞` point)<br>
 2&rpar; 인라인 선언 : HTML <code>style</code> 속성 사용 (`1000` point)
-<br>
-3&rpar; 아이디 선택자 (`100` point)
+<br>3&rpar; 아이디 선택자 (`100` point)
 <br>
 4&rpar; 클래스 선택자 (`10` point)
 <br>
