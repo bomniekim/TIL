@@ -215,8 +215,12 @@
 
 요소의 타입(태그이름)과 동일한 타입인 형제 요소 중 해당 요소가 n번째 요소라면 선택한다.
 
+
 > **p:nth-of-type(2)** <br>> 형제 요소 중 2번째 `p`요소를 선택<br>**(`n` 키워드 사용 시 `0`부터 해석한다.(Zero-base))**
 
+<br>
+
+[사용예시 1]
 ```css
 .app p:nth-of-type(2) {
   color: tomato;
@@ -231,7 +235,36 @@
   <span>Java</span> 
 </ul>
 ```
-> cf) :first-of-type, :last-of-type, :nth-last-of-type(n)
+
+<br>
+
+[사용예시 2]
+```css
+.app .red:nth-of-type(1) {
+  color: red;
+}
+```
+
+```html
+<!-- 선택된 요소 없음 -->
+<ul class="app">
+  <li>HTML</li> 
+  <li class="red">CSS</li> 
+  <li>JavaScript</li> 
+  <li class="red">Java</li> 
+</ul>
+```
+> 첫번째 자식 요소의 `class`가 red가 아니기 때문에 선택되는 요소가 없음
+
+> cf) first-of-type, last-of-type, nth-last-of-type(n)
+
+<br>
+
+### 5) 부정 선택자(Negation Pseudo-Class)
+
+해당하지 않는 모든 요소를 선택한다.
+
+> p:
 
 <br>
 
