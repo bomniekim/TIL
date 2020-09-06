@@ -81,7 +81,7 @@ html {
 <br>
 
 ## 5. 뷰포트(Viewport) 단위
-> 뷰포트? 화면 Display상의 표시 영역
+> 화면 Display상의 표시 영역
 
 <br>
 
@@ -102,7 +102,7 @@ html {
 ```css
 .app {
     height: 50vh;
-    /* 뷰포트 높의 50%를 height 값으로 지정 */
+    /* 뷰포트 높이의 50%를 height 값으로 지정 */
 }
 ```
 
