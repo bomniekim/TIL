@@ -311,14 +311,23 @@ div::after {
 
 ### 1) attr
 > __a[href]__  <br>> `a` 요소 중에 `href` 속성을 갖는 모든 요소를 선택\.
+
+<br>
+
 ### 2) attr=value
 > __a[target="_blank"]__  <br>> `a` 요소 중에 `target` 속성 값이 "_blank"인 모든 요소를 선택.
+
+<br>
+
 ### 3) attr^=value
 > __p[class^="btn-"]__  <br>> `p` 요소 중에 `class` 속성 값이 "btn-"로 시작하는 모든 요소를 선택.
+
+<br>
+
 ### 4) attr$=value
 > __p[class$="app"]__  <br>> `p` 요소 중에 `class` 속성 값이 "app"으로 끝나는 모든 요소를 선택.
 
-
+<br>
 
 ### 5) attr~=value
 지정된 속성의 값이 지정된 value를 __(공백으로 분리된) 단어__ 로 포함하는 요소를 선택한다.
@@ -334,6 +343,9 @@ h1[title~="first"] {
 <h1 title="heading-first">Heading-first</h1>
 <h1 title="heading second">Heading second</h1>
 ```
+
+<br>
+
 ### 6) attr|=value
 지정된 속성의 값과 일치하거나 지정 속성 값 뒤 연이은 하이픈(“값-“)으로 시작하는 요소를 선택한다.
 > __p[lang|="en"]__<br>>  `p` 요소 중에 `lang` 값이 "en"과 일치하거나 "en-"로 시작하는 요소를 선택
@@ -349,6 +361,9 @@ p[lang|="en"] {
 <p lang="ko">안녕!</p>
 <p lang="us">Hi!</p>
 ```
+
+<br>
+
 ### 7) attr*=value
 지정된 속성 값을 포함하는 요소를 선택한다.
 > __div[class*="test"]__<br>> `div` 중에서 `class` 값에 "test"를 포함하는 요소를 선택
@@ -364,6 +379,9 @@ div[class*="test"] {
 <div class="test">div3</div> <!--선택-->
 <p class="test">p1</p>
 ```
+
+<br>
+
 
 
 
