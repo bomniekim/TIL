@@ -20,4 +20,22 @@ __상속__ 이란 상위(부모, 조상) 요소에 적용된 프로퍼티를 하
 - letter-spacing
 - white-space
     
-> 상속되지 않는 경우(상속받지 않는 요소 또는 상속되지 않는 프로퍼티), `inherit` 키워드를 사용하여 명시적으로 상속받게 할 수 있다.
+> 강제 상속: 상속되지 않는 경우(상속받지 않는 요소 또는 상속되지 않는 프로퍼티), `inherit` 키워드
+
+```html
+<div class="parent">
+    parent
+  <div class="child">child</div>
+</div>
+```
+```css
+.parent {
+    position: absolute;
+    /* 상속되지 않는 position 속성 */
+}
+.child {
+    position: inherit;
+    /* 강제 상속 받아 부모의 position과 동일 */
+}
+```
+
