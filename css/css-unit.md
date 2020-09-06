@@ -3,7 +3,6 @@
 CSS에서 사용되는 대표적인 크기의 단위는 다음과 같다.
 
 <br>
-<br>
 
 ## 1. `px` (픽셀)
 `px`은 픽셀(화소) 단위로써 스크린 해상도를 기준으로 하는 단위이다.<br> 1px은 화소 1개 크기를 의미하며 디바이스 해상도(resolution)에 따라 상대적인 크기를 갖는다.
@@ -82,10 +81,34 @@ html {
 <br>
 
 ## 5. 뷰포트(Viewport) 단위
+> 뷰포트? 화면 Display상의 표시 영역
+
+<br>
+
+### 1) `vw`
+> viewport width
+뷰포트(Viewport)의 `width` 값을 기준으로 한다. `vw` 는 백분율을 사용하기 때문에 `%` 처럼 100vw을 최대값으로 한다.
+```css
+.app {
+    width: 50vw;
+    /* 뷰포트 너비의 50%를 width 값으로 지정 */
+}
+```
+<br>
+
+### 1) `vh`
+> viewport height
+뷰포트(Viewport)의 `height` 값을 기준으로 한다. `vh` 도 마찬가지로 백분율을 사용하기 때문에 100vh를 최대값으로 한다.
+```css
+.app {
+    height: 50vh;
+    /* 뷰포트 높의 50%를 height 값으로 지정 */
+}
+```
 
 
 ---
-
+기타 
 [여기](https://developer.mozilla.org/ko/docs/Learn/CSS/Building_blocks/Values_and_units)
 
 
