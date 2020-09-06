@@ -280,6 +280,9 @@
 
 > __li::before__ <br> > li 요소 __내부의 앞__ 에, 내용(content)을 삽입
 
+### 2) after
+> __li::after <br> > li 요소 __내부의 뒤__ 에, 내용(content)을 삽입
+
 ```css
 div::before {
  content: "<";
@@ -295,11 +298,73 @@ div::after {
 <div>tag</div>
 ```
 
-<img src="../images/css/tag.png" width="200">
+<img src="../images/css/tag.png" width="150">
 
 <br>
+<br>
+<br>
+<br>
 
-### 2) after
+## 5. 속성 선택자(Attribute Selector)
+
+지정된 어트리뷰트를 갖는 모든 요소를 선택한다.
+
+### 1) attr
+> __a[href]__  <br>> `a` 요소 중에 `href` 속성을 갖는 모든 요소를 선택\.
+### 2) attr=value
+> __a[target="_blank"]__  <br>> `a` 요소 중에 `target` 속성 값이 "_blank"인 모든 요소를 선택.
+### 3) attr^=value
+> __p[class^="btn-"]__  <br>> `p` 요소 중에 `class` 속성 값이 "btn-"로 시작하는 모든 요소를 선택.
+### 4) attr$=value
+> __p[class$="app"]__  <br>> `p` 요소 중에 `class` 속성 값이 "app"으로 끝나는 모든 요소를 선택.
+
+
+
+### 5) attr~=value
+지정된 속성의 값이 지정된 value를 __(공백으로 분리된) 단어__ 로 포함하는 요소를 선택한다.
+> __h1[title~="first"]__  <br>> `h1` 요소 중에 `title` 속성 값에 "first"를 단어로 포함하는 모든 요소를 선택.
+
+```css
+h1[title~="first"] {
+  color: tomato;
+}
+```
+```html
+<h1 title="heading first">Heading first</h1> <!--선택-->
+<h1 title="heading-first">Heading-first</h1>
+<h1 title="heading second">Heading second</h1>
+```
+### 6) attr|=value
+지정된 속성의 값과 일치하거나 지정 속성 값 뒤 연이은 하이픈(“값-“)으로 시작하는 요소를 선택한다.
+> __p[lang|="en"]__<br>>  `p` 요소 중에 `lang` 값이 "en"과 일치하거나 "en-"로 시작하는 요소를 선택
+
+```css
+p[lang|="en"] {
+  color: blue;
+}
+```
+```html
+<p lang="en">Hello!</p> <!--선택-->
+<p lang="en-us">Hi!</p> <!--선택-->
+<p lang="ko">안녕!</p>
+<p lang="us">Hi!</p>
+```
+### 7) attr*=value
+지정된 속성 값을 포함하는 요소를 선택한다.
+> __div[class*="test"]__<br>> `div` 중에서 `class` 값에 "test"를 포함하는 요소를 선택
+
+```css
+div[class*="test"] {
+  color: blue;
+}
+```
+```html
+<div class="first_test">div1</div> <!--선택-->
+<div class="second">div2</div>
+<div class="test">div3</div> <!--선택-->
+<p class="test">p1</p>
+```
+
 
 
 
