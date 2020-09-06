@@ -120,9 +120,8 @@
 가상 클래스는 마침표(.) 대신 **콜론(:)을 사용** 한다. CSS 표준에 의해 미리 정의된 이름이 있기 때문에 임의의 이름을 사용할 수 없다.
 
 <br>
-<br>
 
-### 3.1. 링크 셀렉터(Link Pseudo-Classes), 동적 셀렉터(User action Pseudo-Classes)
+### 3.1. 링크 가상 클래스(Link Pseudo-Class), 동적 가상 클래스(User action Pseudo-Class)
 
 ### 1) hover
 
@@ -139,6 +138,23 @@
 ### 4) link, visited
 
 > **a:link**<br>> `a`가 방문하지 않은 링크일 때 <br> > **a:visited**<br>> `a`가 방문한 링크일 때
+
+<br>
+<br>
+
+### 3.2. 구조 가상 클래스 (Structural Pseudo-Class)
+
+### 1) first-child
+
+> **p:first-child** <br>> `p`가 형제 요소 중 첫번째 요소라면 선택
+
+### 2) last-child
+
+> **p:last-child** <br>> `p`가 형제 요소 중 마지막 요소라면 선택
+
+### 3) nth-child
+
+> **p:nth-child(n)** <br>> `p`가 형제 요소 중 n번째 요소라면 선택<br><mark>(`n` 키워드 사용 시 `0`부터 해석한다.(Zero-base))</mark>
 
 <br>
 <br>
