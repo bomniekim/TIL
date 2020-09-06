@@ -7,19 +7,21 @@ __상속__ 이란 상위(부모, 조상) 요소에 적용된 프로퍼티를 하
 
 > 상속되는 속성들(properties)
 : 대부분 text를 다루는 속성들
-- font
-  - font-size
-  - font-weight
-  - font-style
-  - line-height
-  - font-family
-- color
-- text-align
-- text-indent
-- text-decoration
-- opacity / visibility
-- letter-spacing
-- white-space 등
+
+- `font`
+
+  - `font-size`
+  - `font-weight`
+  - `font-style`
+  - `line-height`
+  - `font-family`
+- `color`
+- `text-align`
+- `text-indent`
+- `text-decoration`
+- `opacity` / `visibility`
+- `letter-spacing`
+- `white-space` 등
     
 <br>
 
