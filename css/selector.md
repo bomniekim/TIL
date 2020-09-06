@@ -156,7 +156,7 @@
 
 <br>
 
-사용예시 1
+[사용예시 1]
 ```css
 .app li:nth-child(2) {
   color: tomato;
@@ -172,7 +172,7 @@
 ```
 <br>
 
-사용예시 2
+[사용예시 2]
 ```css
 .app li:nth-child(2n+1) {
   color: tomato;
@@ -190,7 +190,7 @@
 ```
 <br>
 
-사용예시 3
+[사용예시 3]
 ```css
 .app p:nth-child(1) {
   color: tomato;
@@ -210,6 +210,32 @@
 > .app의 첫번째 자식 요소가 `p`가 아니기 때문에 선택되는 요소가 없음
 
 <br>
+
+### 4) nth-of-type
+
+요소의 타입(태그이름)과 동일한 타입인 형제 요소 중 해당 요소가 n번째 요소라면 선택한다.
+
+> **p:nth-of-type(2)** <br>> 형제 요소 중 2번째 `p`요소를 선택<br>**(`n` 키워드 사용 시 `0`부터 해석한다.(Zero-base))**
+
+```css
+.app p:nth-of-type(2) {
+  color: tomato;
+}
+```
+
+```html
+<div class="app">
+  <div>HTML</div> 
+  <p>CSS</p> 
+  <p>JavaScript</p> <!--선택-->
+  <span>Java</span> 
+</ul>
+```
+> cf) :first-of-type, :last-of-type, :nth-last-of-type(n)
+
+<br>
+
+
 <br>
 <br>
 
