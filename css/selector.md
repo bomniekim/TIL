@@ -30,7 +30,7 @@
 
 문서 내에서 특정 `class`값을 가진 요소(들)를 선택한다.
 
-> .app <br> > `class` 값이 app인 요소 선택
+> **.app** <br> > `class` 값이 app인 요소 선택
 
 <br>
 
@@ -39,7 +39,7 @@
 문서 내에서 특정 `id` 값을 가진 요소를 선택한다. <br>
 (`id`는 문서 내의 고유한 값으로 지정해야 한다.)
 
-> #app <br> > `id` 값이 app인 요소를 선택
+> **#app** <br> > `id` 값이 app인 요소를 선택
 
 <br>
 <br>
@@ -85,8 +85,7 @@
   <li>HTML</li>
   <li>CSS</li>
   <li class="app">JS</li>
-  <li>Java</li>
-  <!-- Java가 선택됨 -->
+  <li>Java</li> <!--선택-->
 </ul>
 ```
 
@@ -103,9 +102,8 @@
   <li>HTML</li>
   <li>CSS</li>
   <li class="app">JS</li>
-  <li>Java</li>
-  <li>Python</li>
-  <!-- Java, Python 선택됨 -->
+  <li>Java</li> <!--선택-->
+  <li>Python</li> <!--선택-->
 </ul>
 ```
 
@@ -154,7 +152,62 @@
 
 ### 3) nth-child
 
-> **p:nth-child(n)** <br>> `p`가 형제 요소 중 n번째 요소라면 선택<br><mark>(`n` 키워드 사용 시 `0`부터 해석한다.(Zero-base))</mark>
+> **p:nth-child(n)** <br>> `p`가 형제 요소 중 n번째 요소라면 선택<br>**(`n` 키워드 사용 시 `0`부터 해석한다.(Zero-base))**
+
+<br>
+
+사용예시 1
+```css
+.app li:nth-child(2) {
+  color: tomato;
+}
+```
+
+```html
+<ul class="app">
+  <li>HTML</li>
+  <li>CSS</li> <!-- 선택 -->
+  <li>JavaScript</li>
+</ul>
+```
+<br>
+
+사용예시 2
+```css
+.app li:nth-child(2n+1) {
+  color: tomato;
+  /* n 키워드 사용 시 0부터 시작하여 1,3 */
+}
+```
+
+```html
+<ul class="app">
+  <li>HTML</li> <!-- 선택 -->
+  <li>CSS</li> 
+  <li>JavaScript</li> <!-- 선택 -->
+  <li>Java</li> 
+</ul>
+```
+<br>
+
+사용예시 3
+```css
+.app p:nth-child(1) {
+  color: tomato;
+  /* n 키워드 사용 시 0부터 시작하여 1,3 */
+}
+```
+
+```html
+<!-- 선택된 요소 없음 -->
+<div class="app">
+  <span>HTML</span> 
+  <p>CSS</p> 
+  <p>JavaScript</p>
+  <span>Java</span> 
+</ul>
+```
+> .app의 첫번째 자식 요소가 `p`가 아니기 때문에 선택되는 요소가 없음
 
 <br>
 <br>
