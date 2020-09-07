@@ -69,6 +69,32 @@
 }
 ```
 
+<br>
+
+## 마진 중복(병합,상쇄 Margin Collapse)
+
+마진의 특정 값들이 '중복'되어 합쳐지는 현상이다. 이는 버그(오류)가 아니며 우회하거나 응용할 수 있다. 다음은 마진 중복이 발생하는 경우이다.
+
+<br>
+
+### 1) 형제 요소들의 `margin-top` 과 `margin-bottom` 이 만났을 때
+
+<img src="../images/css/mc_adjacent.png" width="600">
+
+> margin: 30px을 설정한 `div` <br> `margin-top` 과 `margin-bottom`이 만나는 부분의 마진 상쇄가 발생했다.
+
+<img src="../images/css/mc_adjacent2.png" width="600">
+
+> 형제 요소의 `margin-left`와 `margin-right`가 중첩되는 경우는 마진이 상쇄되지 않고 보존된다.
+
+<br>
+
+
+### 2) 부모 요소의 `margin-top` 과 자식 요소의`margin-top` 이 만났을 때
+### 2) 부모 요소의 `margin-bottom` 과 자식 요소의`margin-bottom` 이 만났을 때
+
+
+
 
 
 
