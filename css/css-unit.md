@@ -115,7 +115,7 @@ vw, vh 와 달리 고정 값이 아닌 상대 비교 값을 기준으로 한다.
 - `vmin`: 뷰포트의 너비/높이 값 중 작은 값 기준
 - `vmax`: 뷰포트의 너비/높이 값 중 큰 값 기준
 
-<img src="../images/css/vminvmax.png" width="400">
+<img src="../images/css/vminvmax.png" width="600">
 
 예를 들어, 뷰포트의 크기가 `375px * 667px` 이라면, 아래와 같은 값을 가진다.
 - 1vmin = 3.75px
