@@ -56,6 +56,7 @@ display: inline;
 
 - `width: 0, height: 0` 으로 시작하여
   수평으로 쌓인다.
+- __width / height 의 값을 지정해도 인식하지 않는다.__
 - margin, padding 의 위/아래 값을 지정할 수 없다.
 
 > [margin, padding으로 20px 설정한 span 요소]<br> ![span](../images/html/span.png)<br>
@@ -68,9 +69,9 @@ display: inline;
   <br>
   <br>
 
-#### <u>주요 인라인 요소</u>
+### <u>주요 인라인 요소</u>
 
-`<a>`
+#### `<a>`
 
 href 속성을 통해 다른 페이지, 같은 페이지 위치(# 으로 설정), 파일, 이메일 주소, 전화번호 등 다른 URL로 연결할 수 있는 하이퍼링크를 설정한다.
 <br>
@@ -86,7 +87,7 @@ href 속성을 통해 다른 페이지, 같은 페이지 위치(# 으로 설정)
 <br>
 <br>
 
-`<b>`
+#### `<b>`
 
 The `<b>` tag specifies bold text without any extra importance.
 
@@ -94,7 +95,7 @@ The `<b>` tag specifies bold text without any extra importance.
 <br>
 <br>
 
-`<em>`
+#### `<em>`
 
 The `<em>` tag is used to define emphasized text.
 
@@ -102,7 +103,7 @@ The `<em>` tag is used to define emphasized text.
 <br>
 <br>
 
-`<strong>`
+#### `<strong>`
 
 The `<strong>` tag is used to define text with strong importance.
 
@@ -111,7 +112,7 @@ The `<strong>` tag is used to define text with strong importance.
 <br>
 <br>
 
-`<mark>`
+#### `<mark>`
 
 The `<mark>` tag defines text that should be marked or highlighted.
 
@@ -120,7 +121,7 @@ The `<mark>` tag defines text that should be marked or highlighted.
 <br>
 <br>
 
-`<i>`
+#### `<i>`
 
 The `<i>` tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
 
