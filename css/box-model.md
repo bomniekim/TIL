@@ -142,6 +142,10 @@
 |`%`|_부모 요소의 __너비___ 에 대한 비율로 지정||
 
 <br>
+
+[사용법]<br>
+`margin`과 같다.
+<br>
 <br>
 
 ## padding 으로 인한 요소의 크기 증가
@@ -186,7 +190,7 @@ div {
 
 ## `box-sizing`
 
-박스 모델에서 지정한 너비와 높이는 요소의 `content-box` 크기에만 적용된다. 요소에 `border`나 `padding`이 있으면 content-box의 너비와 높이에 더해서 화면에 그린다. 따라서 요소의 크기를 설정할 때, 원하는 값을 얻으려면 이를 고려해야 한다.
+박스 모델에서 지정한 너비와 높이는 요소의 `content-box` 크기에만 적용된다.<br>요소에 `border`나 `padding`이 있으면 content-box의 너비와 높이에 더해서 화면에 그린다.<br>따라서 요소의 크기를 설정할 때, 원하는 값을 얻으려면 이를 고려해야 한다.
 
 box-sizing 은 다음 속성을 사용하여 조절할 수 있다.
 - `content-box` (default)
@@ -199,12 +203,18 @@ box-sizing 은 다음 속성을 사용하여 조절할 수 있다.
 
 > padding-box는 브라우저의 호환성 문제로 사실상 사용되지 않는다.
 
-
+<br>
+<br>
 
 
 
 ---
 ### References
+- [MDN Box Model](https://developer.mozilla.org/ko/docs/Learn/CSS/Building_blocks/%EC%83%81%EC%9E%90_%EB%AA%A8%EB%8D%B8)
+- [MDN Mastering margin collapsing](https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
+- [MDN Box Sizing](https://developer.mozilla.org/ko/docs/Web/CSS/box-sizing)
+- [CSS 박스 모델](https://poiemaweb.com/css3-box-model)
+- [CSS display](https://poiemaweb.com/css3-display)
 - https://zellwk.com/blog/understanding-css-box-sizing/
 
 
