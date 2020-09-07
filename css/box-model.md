@@ -179,6 +179,13 @@ div {
     box-sizing: border-box;
 }
 ```
+> 이 경우 `content-box` 의 크기가 `80px * 80px` 로 줄어든다.
+
+<br>
+<br>
+
+## `border`
+
 
 
 
