@@ -36,7 +36,7 @@
 
 - block 레벨 요소 내에는 inline 레벨 요소를 포함할 수 있다.
 
-- [block elements list](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements#Elements)
+- [block elements list 모두 보기](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements#Elements)
 
 
 <Br>
@@ -58,7 +58,7 @@
 
 - inline 레벨 요소 내에 block 레벨 요소를 포함할 수 없다.
 
-- [inline elements list](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#Elements)
+- [inline elements list 모두 보기](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#Elements)
 
 <br>
 <br>
@@ -72,6 +72,12 @@
 - `block` 레벨 요소처럼 `width`, `height`, `margin`, `padding`를 모두 정의할 수 있다. 
 
 - content의 너비만큼 가로 폭을 차지한다.
+
+<br>
+<br>
+
+### 4) none
+해당 요소를 화면에 표시하지 않는다. (DOM tree에서 아예 사라진다.)
 
 <br>
 <br>
@@ -91,6 +97,27 @@
 
 ## `opacity`
 
+`opacity`는 요소의 투명도를 정의한다. 0.0 ~ 1.0의 값을 입력하며 0.0은 투명, 1.0은 불투명을 의미한다.
+
+
+<br>
+
+### opacity: 0과 display: none의 차이
+
+#### opacity: 0
+<img src="../images/css/opacity.png" width="300">
+
+> 투명도를 0으로 설정하면 요소를 그 자리에서 숨겨준다. (visibility: hidden과 같음.)
+
+<br>
+
+#### display: none
+<img src="../images/css/none.png" width="300">
+
+> `display: none`은 요소를 그 자리에서 사라지게 한다. 
+
+<br>
+<br>
 
 ---
 ### References
