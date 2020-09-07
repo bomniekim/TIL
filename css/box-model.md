@@ -76,11 +76,11 @@
 
 ### 1) 형제 요소들의 `margin-top` 과 `margin-bottom` 이 만났을 때
 
-<img src="../images/css/mc_adjacent.png" width="600">
+<img src="../images/css/margin1.png" width="600">
 
 > margin: 30px을 설정한 `div` <br> `margin-top` 과 `margin-bottom`이 만나는 부분의 마진 상쇄가 발생했다.
 
-<img src="../images/css/mc_adjacent2.png" width="600">
+<img src="../images/css/margin2.png" width="600">
 
 > 형제 요소의 `margin-left`와 `margin-right`가 중첩되는 경우는 마진이 상쇄되지 않고 보존된다.
 
@@ -88,6 +88,8 @@
 
 
 ### 2) 부모 요소의 `margin-top` 과 자식 요소의`margin-top` 이 만났을 때
+
+
 ### 2) 부모 요소의 `margin-bottom` 과 자식 요소의`margin-bottom` 이 만났을 때
 
 
