@@ -83,6 +83,7 @@ html {
 ## 5. 뷰포트(Viewport) 단위
 > 화면 Display상의 표시 영역
 
+뷰포트(Viewport)의 크기를 기준으로 하는 단위로써 반응형 웹에서 화면의 크기에 동적으로 대응하기 위해 자주 사용한다.
 <br>
 
 ### 1) `vw`
@@ -119,17 +120,16 @@ vw, vh 와 달리 고정 값이 아닌 상대 비교 값을 기준으로 한다.
 - 1vmax = 6.67px
 
 
+<br>
+<br>
 
+### 기타
 
+더 많은 CSS 값과 단위는 [여기](https://developer.mozilla.org/ko/docs/Learn/CSS/Building_blocks/Values_and_units)를 참고.
 
 <br>
 
-
-
 ---
-기타 
-[여기](https://developer.mozilla.org/ko/docs/Learn/CSS/Building_blocks/Values_and_units)
-
 
 ### References
 - [MDN CSS 값과 단위](https://developer.mozilla.org/ko/docs/Learn/CSS/Building_blocks/Values_and_units)
