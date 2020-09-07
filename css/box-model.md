@@ -143,9 +143,39 @@
 
 <br>
 
-### padding 으로 인한 박스 크기 증가
+## padding 으로 인한 요소의 크기 증가
 
-추가된 padding 값만큼 요소의 크기가 커진다.
+요소에 padding 이 지정되면 추가된 `padding` 값만큼 요소의 전체 크기가 커진다. 요소의 크기가 `padding` 크기를 흡수해 커지는 이유는 `box-sizing` 의 기본 값이 `content-box`이기 때문이다. 즉, 요소의 `width` 값을 `150px` 로 지정하면 박스 모델의 _content-box 의 영역만_ 온전히 `150px`로 지정한다는 의미이다.
+
+<br>
+
+### padding 의 영향으로 인한 요소의 크기 증가 막기
+
+#### 1) 직접 계산
+
+`div`의 `width` / `height` 값이 각각 100px인 요소의 내부에 10px의 `padding` 을 추가하면서 요소의 크기를 그대로 100px 로 유지하려면 다음과 같이 직접 계산하여 값을 지정할 수 있다.
+```css
+div {
+    width: 80px;
+    height: 80px;
+    background: skyblue;
+    padding: 10px;
+}
+```
+
+#### 2) 자동 설정 `box-sizing` : `border-box` 
+
+위와 같은 상황에서 `width` / `height` 값을 직접 계산하지 않고
+다음과 같이 `box-sizing`:`border-box`; 속성을 추가하여 요소의 크기 증가를 막을 수 있다.
+```css
+div {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background: skyblue;
+    box-sizing: border-box;
+}
+```
 
 
 
