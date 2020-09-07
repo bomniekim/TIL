@@ -89,8 +89,24 @@
 
 ### 2) 부모 요소의 `margin-top` 과 자식 요소의`margin-top` 이 만났을 때
 
+<img src="../images/css/margin3.png" width="600">
 
-### 2) 부모 요소의 `margin-bottom` 과 자식 요소의`margin-bottom` 이 만났을 때
+> child의 margin: 40px로 설정<br> 부모의 `margin-top`을 지정하지 않았지만 child의 margin-top: 40px의 영향을 받았다. 
+
+<br>
+
+### 3) 부모 요소의 `margin-bottom` 과 자식 요소의`margin-bottom` 이 만났을 때
+
+<br>
+<br>
+
+그러나 부모/자식 요소의 마진 중복은 다음의 경우에만 발생한다.
+
+1&rpar;부모 요소의 `border`가 없거나
+
+2&rpar; 부모 요소의 `padding`이 없거나
+
+3&rpar; 부모 요소에 인라인 요소가 없는 경우 
 
 
 
