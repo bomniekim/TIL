@@ -89,8 +89,16 @@
 |---|---|---|
 |`visible`|넘친 부분을 자르지 않고 그대로 보여줌|`visible`|
 |`hidden`|넘친 부분은 숨기고 보이지 않도록 함||
-|`scroll`|넘친 부분을 잘라내고 scroll bar를 이용하여 볼 수 있도록 함(가로/세로 모두 scroll bar가 생김)<img src="../images/css/scroll1.png" width="400">||
-|`auto`|넘친 부분이 있는 경우만 잘라내고, 넘친 부분만 scroll을 이용하여 볼 수 있도록 함(넘친 부분이 있는 쪽만 scroll bar가 생김)<img src="../images/css/scroll2.png" width="400">|
+|`scroll`|넘친 부분을 잘라내고 scroll bar를 이용하여 볼 수 있도록 함(가로/세로 모두 scroll bar가 생김)||
+|`auto`|넘친 부분이 있는 경우만 잘라내고, 넘친 부분만 scroll을 이용하여 볼 수 있도록 함(넘친 부분이 있는 쪽만 scroll bar가 생김)|
+
+<br>
+
+#### overflow: scroll
+<img src="../images/css/scroll1.png" width="300">
+
+#### overflow: auto
+<img src="../images/css/scroll2.png" width="300">
 
 <br>
 <br>
