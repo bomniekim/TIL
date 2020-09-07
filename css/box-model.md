@@ -58,17 +58,14 @@
 [사용법]
 ```css
 .box {
-    margin: 10px 20px 30px 40px;
-    /* top - right - bottom - left */
-    margin: 10px 20px 40px;
-    /* top - (right/left) - bottom */
-    margin: 10px 40px;
-    /* (top/bottom) - (right/left) */
-    margin: 10px;
-    /* all */
+    margin: 10px 20px 30px 40px; /* top - right - bottom - left */
+    margin: 10px 20px 40px; /* top - (right/left) - bottom */
+    margin: 10px 40px; /* (top/bottom) - (right/left) */
+    margin: 10px; /* all */
 }
 ```
 
+<br>
 <br>
 
 ## 마진 중복(병합,상쇄 Margin Collapse)
