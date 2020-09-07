@@ -1,5 +1,8 @@
 # CSS Display
 
+<Br>
+<Br>
+
 ## `display`
 
 `display` 는 요소의 layout 정의에 사용되는 중요한 프로퍼티이다.
