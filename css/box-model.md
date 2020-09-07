@@ -193,6 +193,7 @@ box-sizing 은 다음 속성을 사용하여 조절할 수 있다.
 - border-box
 
 아래의 사진은 박스 모델의 구성 요소이다. HTML 문서가 렌더링된 후 박스의 width / height (content), padding, margin, border에 적용된 값을 나타낸 것이며 이는 크롬 개발자 도구에서 확인할 수 있다.
+
 <img src="../images/css/box-sizing.jpg" width="600">
 
 > padding-box는 브라우저의 호환성 문제로 사실상 사용되지 않는다.
