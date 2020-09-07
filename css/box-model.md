@@ -105,11 +105,22 @@
 그러나 부모/자식 요소의 마진 중복은 다음의 경우에만 발생한다.
 
 #### 1&rpar; 부모 요소의 `border`가 없거나
+> 부모 요소에 `border`가 설정되면 아래와 같이 마진 상쇄가 사라진다.
+<img src="../images/css/margin4.png" width="400">
 
 #### 2&rpar; 부모 요소의 `padding`이 없거나
+> 부모 요소에 `padding`을 설정하면 마진 상쇄가 일어나지 않는다.
+<img src="../images/css/margin5.png" width="400">
+
 
 #### 3&rpar; 부모 요소에 인라인 요소가 없는 경우 
+> 부모 요소에 `text(인라인 요소)`가 있다면 마진 상쇄가 일어나지 않는다.
+<img src="../images/css/margin6.png" width="400">
 
+<br>
+<br>
+
+### 마진 중복 계산하기
 
 
 
