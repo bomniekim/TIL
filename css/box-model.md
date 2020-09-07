@@ -14,9 +14,62 @@
 요소의 텍스트나 이미지 등의 실제 내용이 위치하는 영역이다. `width`, `height`를 갖는다.
 
 ### 1) width
-> 요소의 너비
+> 요소의 가로 너비
 
 |값|의미|default|
 |---|---|---|
 |`auto`|브라우저가 너비를 계산|`auto`|
 |단위|`px`, `em`, `%` 등||
+
+<br>
+
+### 2) height
+> 요소의 세로 높이
+
+|값|의미|default|
+|---|---|---|
+|`auto`|브라우저가 높이를 계산|`auto`|
+|단위|`px`, `em`, `cm` 등||
+
+<br>
+
+### 3) 박스의 최대/최소 너비/높이
+
+- `max-width` / `max-height` : 기본값은 none
+
+- `min-width` / `min-height` : 기본값은 0
+
+<Br>
+<Br>
+
+## `margin`
+
+요소의 '__외부(바깥) 여백__'을 지정한다.
+> 음수 값(Negative Values)을 사용할 수 있다.
+
+|값|의미|default|
+|---|---|---|
+|단위|`px`, `em`, `cm` 등|`0`|
+|`auto`|브라우저가 너비를 계산||
+|`%`|_부모 요소의 __너비___ 에 대한 비율로 지정||
+
+<br>
+
+[사용법]
+```css
+.box {
+    margin: 10px 20px 30px 40px;
+    /* top - right - bottom - left */
+    margin: 10px 20px 40px;
+    /* top - (right/left) - bottom */
+    margin: 10px 40px;
+    /* (top/bottom) - (right/left) */
+    margin: 10px;
+    /* all */
+}
+```
+
+
+
+
+
