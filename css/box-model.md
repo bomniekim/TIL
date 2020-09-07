@@ -145,7 +145,7 @@
 
 ## padding 으로 인한 요소의 크기 증가
 
-요소에 padding 이 지정되면 추가된 `padding` 값만큼 요소의 전체 크기가 커진다. 요소의 크기가 `padding` 크기를 흡수해 커지는 이유는 `box-sizing` 의 기본 값이 `content-box`이기 때문이다. 즉, 요소의 `width` 값을 `150px` 로 지정하면 박스 모델의 _content-box 의 영역만_ 온전히 `150px`로 지정한다는 의미이다.
+요소에 padding 이 지정되면 추가된 `padding` 값만큼 요소의 전체 크기가 커진다.<br>요소의 크기가 `padding` 크기를 흡수해 커지는 이유는 `box-sizing` 의 기본 값이 `content-box`이기 때문이다. <br>즉, 요소의 `width` 값을 `150px` 로 지정하면 박스 모델의 _content-box 의 영역만_ 온전히 `150px`로 지정한다는 의미이다.
 
 <br>
 
