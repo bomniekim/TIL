@@ -96,13 +96,19 @@
 
 <img src="../images/css/font-family.png" width="280">
 
-<br>
 
 ### font 단축 속성
 
-font 속성을 한 번에 단축하여 지정할 수 있다. 다른 값은 생략 가능하지만 `font-size`, `font-family` 값은 필수로 지정해야 한다. `line-height` 값은 \/를 사용하여 `font-size` 값과 명확하게 구분해야 한다.
+font 속성을 한 번에 단축하여 지정할 수 있다. 다른 값은 생략 가능하지만 `font-size`, `font-family` 값은 필수로 지정해야 한다.<br> `line-height` 값은 \/를 사용하여 `font-size` 값과 명확하게 구분해야 한다.
 
-
+```css
+  font: (font-style) (font-weight) font-size / (line-height) font-family;
+```
+```css
+.app {
+	font: italic bold 20px / 1.5 "Arial", sans-serif;
+}
+```
 ### color
 
 ## 텍스트 속성(text properties)
