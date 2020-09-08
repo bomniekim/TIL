@@ -109,9 +109,32 @@ font 속성을 한 번에 단축하여 지정할 수 있다. 다른 값은 생�
 	font: italic bold 20px / 1.5 "Arial", sans-serif;
 }
 ```
-### color
+<br>
+<br>
+
+### 6) `color`
+
+글꼴의 색상을 지정한다.
+
+<br>
+
+[색상표현 방법]
+|표현|의미|예시|
+|---|---|---|
+|색상이름|브라우저에서 제공하는 색상이름|`red`, `blue` 등||
+|`Hex Code`| 16진수 색상(Hexadecimal colors) 0-9,a-f 사용| #000000(Black) - #ffffff(White)|
+|`rgb()`| Red, Green, Blue 값 지정| rgb(255, 255, 255)|
+|`rgba()`| Red, Green, Blue, Opacity 값 지정| rgba(255, 255, 255, .5)|
+|`hsl()`| 색상, 채도, 명도 값 지정| hsl(120, 100%, 50%)|
+|`hsla()`| 색상, 채도, 명도, 투명도 값 지정| hsl(120, 100%, 50%, .5)|
+
+<br>
+<br>
+<br>
+
 
 ## 텍스트 속성(text properties)
+
 <br>
 
 
