@@ -218,20 +218,47 @@ image를 HTML 속성 `<img>`가 아닌 CSS로 삽입하는 경우 image의 필�
 
 <br>
 
-> white-space 예시를 보려면 [여기](https://developer.mozilla.org/ko/docs/Web/CSS/white-space)를 참조.
+> `white-space` 예시를 보려면 [여기](https://developer.mozilla.org/ko/docs/Web/CSS/white-space)를 참조.
 
 <Br>
 
-### 6) `word-wrap`
+### 6) `overflow-wrap(word-wrap)`
+
+한 단어의 길이가 길어서 부모 영역을 벗어난 텍스트의 처리 방법을 정의한다. 
+
+|값|의미|
+|---|---|
+|normal|(두 단어 사이의 공백과 같이) 보통의 줄 바꿈 지점에서만 줄을 바꿈|
+|break-word|단어가 길어 줄을 바꿀 만한 지점이 없을 시 임의의 지점에서 줄을 바꿈|
+
+<br>
 
 ### 7) `word-break`
 
+한 단어의 길이가 길어서 부모 영역을 벗어난 텍스트의 처리 방법을 정의한다.
+
+|값|의미|
+|---|---|
+|`normal`|기본 줄 바꿈 규칙을 사용|
+|`break-all`|단어를 고려하지 않고 부모 영역에 맞추어 강제 개행(한중일 제외)|
+|`keep-all`|한중일 텍스트에서는 줄을 바꿀 때 단어를 끊지 않음. 비 CJK 텍스트에서는 `normal`과 동일|
+
+<br>
+
+> `word-break` 예시를 보려면 [여기](https://developer.mozilla.org/ko/docs/Web/CSS/word-break)를 참조.
+
+<br>
+<br>
+<br>
 
 
 
 
 ---
 ### References
+- https://poiemaweb.com/css3-font-text
 - [생활코딩 CSS 사전 line-height](https://opentutorials.org/course/718/3902)
+- [MDN word-break](https://developer.mozilla.org/ko/docs/Web/CSS/word-break)
+- [MDN overflow-wrap](https://developer.mozilla.org/ko/docs/Web/CSS/overflow-wrap)
 
 
