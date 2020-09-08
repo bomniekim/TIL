@@ -14,6 +14,9 @@
 |`oblique`|기울어진 글자||
 |`oblique deg`|기울어진 글자(각도 설정)||
 
+<br>
+
+
 ### 2) `font-weight`
 글자의 두께(가중치)를 지정한다.
 
@@ -134,8 +137,82 @@ font 속성을 한 번에 단축하여 지정할 수 있다. 다른 값은 생�
 
 
 ## 텍스트 속성(text properties)
+<br>
+
+### 1) `text-align`
+
+텍스트의 (수평)정렬 방식을 지정한다. 
+
+- `left` : 왼쪽 정렬
+
+- `right` : 오른쪽 정렬
+- `center` : 가운데 정렬
+- `justify` : 양쪽 맞춤 
+    > 2 줄 이상 작성 시 적용되며 `<br>` 사용 시 동작하지 않는다.
 
 <br>
+
+### 2) `text-decoration`
+
+텍스트의 선 장식을 할 수 있도록 하는 속성이다.
+
+- `none` : 꾸밈 없음 / default
+
+- `underline` : 밑줄
+
+- `overline` : 윗줄
+
+- `line-through` : (텍스트를 가로지르는) 중앙선
+    > `<del>` 요소로 텍스트를 감싸는 것과 시각적으로 같은 효과를 가진다. 하지만 삭제된 텍스트를 의미하고 싶다면 `<del>` 태그를 사용하는 것이 Semantic 하다.
+
+<br>
+
+### 3) `text-intent`
+
+(첫번째 줄의) 들여쓰기를 지정한다. 음수 값을 사용할 수 있으며 이는 내어쓰기(왼쪽으로 들어쓰기)를 지정하는 것이다.
+
+<br>
+
+#### `text-intent`를 이용한 웹 접근성
+
+image를 HTML 속성 `<img>`가 아닌 CSS로 삽입하는 경우 image의 필수 속성인 `alt`를 지정할 수 없다. 이 경우, 웹 접근성을 위해 대체 텍스트를 지정해주어야 하는데 이미지만 보이게 하고 
+텍스트를 특정 영역 밖으로 밀어내고 싶은 경우 명시적으로 `text-indent: -9999px`를 사용한다.
+
+```html
+<div class="app">고양이와 강아지가 서로 창문을 두고 마주하고 있는 이미지</div>
+```
+```css
+.app {
+   background: url("css/images/catdog.png")
+   width: 300px;
+   height: 200px;
+   text-indent: -9999px;
+}
+```
+
+<br>
+
+### 4) `letter-spacing` / `word-spacing`
+
+- letter-spacing: 텍스트의 자간(글자 간격)을 설정한다.
+
+- word-spacing: 텍스트의 띄어쓰기 간격을 설정한다.
+
+    > 음수 값을 사용할 수 있다.
+
+<br>
+
+### 5) `white-space`
+
+`white space`는 공백(space), 들여쓰기(tab), 줄바꿈(line break)을 의미한다. HTML은 기본적으로 연속된 공백(space), 들여쓰기(tab)는 1번만 실행되며 줄바꿈(line break)은 무시된다. 또한 텍스트는 부모의 가로 영역을 벗어나지 않고 자동 줄바꿈(wrap)된다. white-space 프로퍼티는 이러한 기본 동작을 제어한다.
+
+
+### 6) `word-wrap`
+
+### 7) `word-break`
+
+
+
 
 
 ---
