@@ -60,7 +60,7 @@
 > 일반적으로 단위와 배수를 가장 많이 사용하며 `1.4`~`1.7`배가 가장 적합하다. 특정 단위로 설정했을 때 다른 요소의 값이 변경된다면 유동적으로 변경하는 것이 힘들다.
 
 
-<img src="../images/css/line-height.gif" width="400">
+<img src="../images/css/line-height.gif" width="600">
 
 <br>
 <br>
@@ -87,7 +87,7 @@
 |`cursive`|필기체 계열|
 |`fantasy`|장식이 있는 글꼴 계열|
 
-<img src="../images/css/font-family.png" width="400">
+<img src="../images/css/font-family.png" width="300">
 
 <br>
 <br>
