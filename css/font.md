@@ -204,8 +204,23 @@ image를 HTML 속성 `<img>`가 아닌 CSS로 삽입하는 경우 image의 필�
 
 ### 5) `white-space`
 
-`white space`는 공백(space), 들여쓰기(tab), 줄바꿈(line break)을 의미한다.<br> HTML은 기본적으로 연속된 공백(space), 들여쓰기(tab)는 1번만 실행되며 줄바꿈(line break)은 무시된다.<br> 또한 텍스트는 부모의 가로 영역을 벗어나지 않고 자동 줄바꿈(wrap)된다. white-space 프로퍼티는 이러한 기본 동작을 제어한다.
+공백문자를 어떻게 다룰 것인가를 정의한다.
 
+`white-space`는 공백(space), 들여쓰기(tab), 줄바꿈(line break)을 의미한다.<br> HTML은 기본적으로 연속된 공백(space), 들여쓰기(tab)는 1번만 실행되며 줄바꿈(line break)은 무시된다.<br> 또한 텍스트는 부모의 가로 영역을 벗어나지 않고 자동 줄바꿈(wrap)된다. white-space 프로퍼티는 이러한 기본 동작을 제어한다.
+
+|값|line break|space/tab|자동 줄바꿈|특징|
+|---|---|---|---|---|
+|`normal`|무시|1번만 반영|O|연속된 공백 문자나 줄바꿈 통합(default)|
+|`nowrap`|무시|1번만 반영|X||
+|`pre`|반영|그대로 반영|X|모든 원문 그대로 출력|
+|`pre-wrap`|반영|그대로 반영|O|줄바꿈은 통합하고 원문 그대로 출력|
+|`pre-line`|반영|1번만 반영|O|
+
+<br>
+
+> white-space 예시를 보려면 [여기](https://developer.mozilla.org/ko/docs/Web/CSS/white-space)를 참조.
+
+<Br>
 
 ### 6) `word-wrap`
 
