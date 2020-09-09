@@ -75,16 +75,43 @@ float 속성이 추가된 요소의 부모 요소에 overflow 속성을 추가�
 ```
 ```css
 .parent{
-  overflow: hidden; /* or auto */
+  overflow: hidden; /* or 'auto' */
 }
 .child {
   float: left;
 }
 ```
 
-> 1) 의 그림과 같은 모습으로 배치됨.
+> 1&rpar; 의 그림과 같은 모습으로 배치됨.
 
+불필요한 형제 요소를 만들지 않고 `float` 속성을 해제할 수 있으나 `overflow` 는 `float` 의 해제와 실제로는 무관한 속성임으로 hack 이다.
+
+<br>
 
 ### 3) __부모 요소에 `clearfix` 클래스 추가 (추천!)__
+
+`float` 속성이 추가된 요소의 부모요소에 미리 지정된 `clearfix` 클래스를 추가한다.
+
+```html
+<div class="parent clearfix">
+  <div class="child">float</div>
+  <div class="child">float</div>
+</div>
+```
+```css
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block; /* or 'table' */
+}
+```
+
+__`::after`__ 선택자를 이용해 `float` 속성이 적용된 요소의 뒤쪽에 가상요소를 만들고 `clear` 속성을 지정해 `float` 을 해제한다.
+이를 통해 `clearfix` 클래스가 지정된 부분 안에서는 float 을 자유롭게 이용할 수 있다.
+
+> 단, 자식 요소는 float 이 적용되는 요소만 배치해야 해제가 용이함으로 이 점을 주의하자!
+
+
+
 
 
