@@ -4,6 +4,18 @@
 
 <br>
 
+## Box Offset
+
+- `top`
+
+- `bottom`
+
+- `right`
+
+- `left`
+
+
+
 ## 1) `static` (기본 위치)
 
 `static` 은 `position` 의 default 값으로 `position` 를 지정하지 않았을 때와 같다.
@@ -23,3 +35,5 @@
 <u>자기 자신</u>을 기준으로 `top`, `bottom`, `left`, `right` 를 사용하여 위치를 이동시킨다.
 
 > static을 선언한 요소와 relative를 선언한 요소의 차이점은 좌표 프로퍼티의 동작 여부뿐이며 그외는 동일하게 동작한다.
+
+
