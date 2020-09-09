@@ -41,7 +41,6 @@
 
 `float` 속성이 추가된 요소의 다음 형제 요소에 clear 속성을 추가하여 해제한다.
 
-<img src="../images/css/clear-left.png" width="400">
 
 ```html
 <div class="float-left">float</div>
@@ -57,6 +56,10 @@
 .next {
   clear: left;
 ```
+
+<img src="../images/css/clear-left.png" width="400">
+
+<br>
 
 #### 2) 부모 요소에 `overflow`: (hidden, auto) 지정 
 #### 3) __부모 요소에 `clearfix` 클래스 추가 (추천!)__
