@@ -17,7 +17,7 @@ display: block;
 <br>
 특징
 
-- `width: 100px, height: 0` 으로 시작하여 수직으로 쌓인다.
+- `width: 100%, height: 0` 으로 시작하여 수직으로 쌓인다.
 
 - margin, padding 의 상하좌우 모든 값을 지정하여 사용할 수 있다.
 
