@@ -8,7 +8,7 @@
 
 <Br>
 
-<img src="../images/css/float.png">
+<img src="../images/css/float.png" width="600">
 
 <br>
 <br>
