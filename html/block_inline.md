@@ -59,7 +59,7 @@ display: inline;
 - `width: 0, height: 0` 으로 시작하여
   수평으로 쌓인다.
 - __`width` / `height` 의 값을 지정해도 인식하지 않는다.__
-- margin, padding, border 의 `top` / `bottom` 값을 지정할 수 없다.
+- `padding`, `border`, `margin` 의 `top` / `bottom` 값을 지정할 수 없다.
 
 > [margin, padding으로 20px 설정한 span 요소]<br> ![span](../images/html/span.png)<br>
 > 오른쪽/왼쪽에는 여백이 적용되었으나 위/아래에는 적용되지 않음.
