@@ -134,5 +134,6 @@ __`::after`__ 선택자를 이용해 `float` 속성이 적용된 요소의 뒤�
 ---
 ### References
 - [MDN Floats](https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout/Floats)
+- [W3C CSS Layout - float and clear](https://www.w3schools.com/css/css_float.asp)
 - [poiemaweb - float](https://poiemaweb.com/css3-float)
 - [Positioning things in CSS using floats](https://medium.com/@anasansari157/positioning-things-in-css-using-floats-9721d833d283)
