@@ -10,11 +10,15 @@
 
 <img src="../images/css/float.png">
 
-|값|의미|default|
-|---|---|---|
-|`none`| 요소 띄움 없음 |✔︎|
-|`left`| 왼쪽으로 띄움||
-|`right`| 오른쪽으로 띄움||
+<br>
+
+float 은 다음의 3 가지 속성을 가진다.
+
+- `none` : 요소 띄움 없음 (default)
+
+- `left` : 요소를 왼쪽으로 띄움
+- `right` : 요소를 오른쪽으로 띄움
+
 
 <Br>
 
