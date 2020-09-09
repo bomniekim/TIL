@@ -29,7 +29,36 @@
       float: left;
   }
 ```
+<br>
+<br>
+
+### float 해제 하기
+
+`float` 속성이 적용된 후 그 요소의 주위로 다른 요소들 역시 흐르게 되는데 이를 방지하기 위해서는 속성을 해제해야 한다.
 
 
+#### 1) 형제 요소에 `clear`: (left, right, both) 지정 
+
+`float` 속성이 추가된 요소의 다음 형제 요소에 clear 속성을 추가하여 해제한다.
+
+<img src="../images/css/clear-left.png" width="400">
+
+```html
+<div class="float-left">float</div>
+<div class="float-left">float</div>
+<div class="next">next</div>
+```
+```css
+
+.float-left {
+  float: left;
+}
+
+.next {
+  clear: left;
+```
+
+#### 2) 부모 요소에 `overflow`: (hidden, auto) 지정 
+#### 3) __부모 요소에 `clearfix` 클래스 추가 (추천!)__
 
 
