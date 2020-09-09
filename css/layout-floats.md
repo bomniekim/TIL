@@ -63,6 +63,28 @@
 <br>
 
 ### 2) 부모 요소에 `overflow`: (hidden, auto) 지정 
+
+float 속성이 추가된 요소의 부모 요소에 overflow 속성을 추가한다.
+
+```html
+<div class="parent">
+  <div class="child">float</div>
+  <div class="child">float</div>
+</div>
+<div class="next">next</div>
+```
+```css
+.parent{
+  overflow: hidden; /* or auto */
+}
+.child {
+  float: left;
+}
+```
+
+> 1) 의 그림과 같은 모습으로 배치됨.
+
+
 ### 3) __부모 요소에 `clearfix` 클래스 추가 (추천!)__
 
 
