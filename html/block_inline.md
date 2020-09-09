@@ -19,6 +19,8 @@ display: block;
 
 - `width: 100%, height: 0` 으로 시작하여 수직으로 쌓인다.
 
+- 따로 `width` 값을 설정하는 경우, 남은 공간은 margin으로 자동적으로 채운다.
+
 - margin, padding 의 상하좌우 모든 값을 지정하여 사용할 수 있다.
 
 > [margin, padding으로 각각 20px 설정한 div 요소] ![div](../images/html/div.png)
