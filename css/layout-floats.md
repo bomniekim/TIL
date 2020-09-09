@@ -63,6 +63,7 @@
 
 .next {
   clear: left;
+}
 ```
 
 <img src="../images/css/clear-left.png" width="400">
@@ -125,8 +126,13 @@ __`::after`__ 선택자를 이용해 `float` 속성이 적용된 요소의 뒤�
 
 `float` 속성이 추가된 요소는 `display` 속성의 값이 대부분 __`block`__ 으로 바뀐다.
 
+> 가장 대표적으로 `inline` 요소인 `<span>`이 `block` 으로 변경된다.
 
+<br>
+<br>
 
-
-
-
+---
+### References
+- [MDN Floats](https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout/Floats)
+- [poiemaweb - float](https://poiemaweb.com/css3-float)
+- [Positioning things in CSS using floats](https://medium.com/@anasansari157/positioning-things-in-css-using-floats-9721d833d283)
