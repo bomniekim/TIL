@@ -34,7 +34,7 @@ top / bottom 은 위치 상의 상위 요소의 세로 너비의 비율로 지�
 
 기본적으로 이 값을 지정할 일은 없지만 이미 설정된 position을 무력화하기 위해 사용될 수 있다.
 
-`top`, `bottom`, `left`, `right`, `z-index` 속성은 무시된다.
+- `top`, `bottom`, `left`, `right`, `z-index` 속성은 무시된다.
 
 ```html
 <div class="parent">
@@ -135,10 +135,9 @@ __자기 자신__ 을 기준으로 `box offset` 을 사용하여 위치를 이�
 <br>
 <br>
 
-## 4) `fixed` (고정 위치)
+## 4) `fixed` (고정 위치 / viewport)
 
-부모 요소와 관계없이 `브라우저의 viewport`를 기준으로 offset 을 사용하여 위치를 이동시킨다.
-
+부모 요소와 관계없이 `브라우저의 viewport`를 기준으로 offset 을 사용하여 위치를 이동시킨다.<br>
 따라서 화면이 스크롤이 되더라도 화면에서 사라지지 않고 항상 같은 곳에 위치한다.
 
 배너 광고나 헤더 같이 화면 상에 고정된 지점에 요소를 위치시키고 싶을 때 사용한다.
@@ -151,3 +150,19 @@ __자기 자신__ 을 기준으로 `box offset` 을 사용하여 위치를 이�
 }
 ```
 <img src="../images/css/fixed.png" width="400">
+
+<Br>
+<Br>
+
+## 5) `sticky` (흡착 위치 /스크롤 영역)
+
+스크롤 영역을 기준으로 요소를 배치한다. relative 와 fixed 의 hybrid 형태로 최초에는 `relative` 처럼 동작하다가 스크롤이 특정 지점에 도달하면 요소를 고정(`fixed`) 시킬 수 있다.
+> IE 지원 불가
+
+- box offset (`top` / `bottom` / `left` / `right`) 의 값을 __하나 이상 반드시__ 사용해야 작동한다.
+
+사용예시는 [여기](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#position_sticky)를 참조.
+
+
+
+
