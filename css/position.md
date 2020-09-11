@@ -60,7 +60,7 @@ top / bottom 은 위치 상의 상위 요소의 세로 너비의 비율로 지�
 <br>
 <br>
 
-## 2) `relative` (상대 위치)
+## 2) `relative` (상대 위치 / 자기 자신)
 
 요소를 일반적인 흐름에 따라 배치하고,
 __자기 자신__ 을 기준으로 `box offset` 을 사용하여 위치를 이동시킨다.
@@ -93,7 +93,7 @@ __자기 자신__ 을 기준으로 `box offset` 을 사용하여 위치를 이�
 <br>
 <br>
 
-## 3) `absolute` (절대 위치)
+## 3) `absolute` (절대 위치 / 위치 상의 부모)
 
 부모 요소 (__위치 상의 상위 요소__ / static 제외)를 기준으로 `box offset` 값만큼 이동한다. <br>즉, `relative`, `absolute`, `fixed` 프로퍼티가 선언되어 있는 부모 또는 조상 요소를 기준으로 위치가 결정된다.
 
@@ -123,14 +123,35 @@ __자기 자신__ 을 기준으로 `box offset` 을 사용하여 위치를 이�
 ```
 <img src="../images/css/absolute.png" width="400">
 
-> `absolute box`를 기준으로 `position` 값이 설정된 가장 가까운 상위요소인 `parent` 를 기준으로 설정된 offset 값에 맞게 위치가 배치됨.
+> `absolute box`를 기준으로 `position` 값이 설정된 가장 가까운 상위요소인 `parent` 를 기준으로 설정된 offset 값에 맞게 위치가 배치된다.
 <br> 만약 이때 다른 요소가 먼저 그 위치를 차지하고 있더라도 밀리지 않고 떠있는 상태로 덮어쓰게 된다.
 
 <br>
 
 <img src="../images/css/absolute-viewport.png" width="450">
 
-> `parent` 에 `position` 값이 설정되어 있지 않는 경우 그 위의 어떠한 상위 요소에도 `position` 값이 지정되어 있지 않기 때문에 __`Viewport`__ 를 기준으로 offset 을 설정하여 요소를 위치시킨다.
+> `parent` 에 `position` 값이 설정되어 있지 않는 경우 그 위의 어떠한 상위 요소에도 `position` 값이 지정되어 있지 않기 때문에<br> __`Viewport`__ 를 기준으로 offset 을 설정하여 요소를 위치시킨다.
+
+<br>
+<br>
+
+## 4) `fixed` (고정 위치)
+
+부모 요소와 관계없이 `브라우저의 viewport`를 기준으로 offset 을 사용하여 위치를 이동시킨다.
+
+따라서 화면이 스크롤이 되더라도 화면에서 사라지지 않고 항상 같은 곳에 위치한다.
+
+배너 광고나 헤더 같이 화면 상에 고정된 지점에 요소를 위치시키고 싶을 때 사용한다.
+
+```css
+.side-banner {
+    position: fixed;
+    left: 0;
+    left: 0;
+}
+```
+<img src="../images/css/fixed.png" width="400">
+
 
 ---  
 
