@@ -158,8 +158,11 @@ __자기 자신__ 을 기준으로 `box offset` 을 사용하여 위치를 이�
 
 ## 5) `sticky` (흡착 위치 / 스크롤 영역)
 
-스크롤 영역을 기준으로 요소를 배치한다. relative 와 fixed 의 hybrid 형태로 최초에는 `relative` 처럼 동작하다가 스크롤이 특정 지점에 도달하면 요소를 고정(`fixed`) 시킬 수 있다.
+스크롤 영역을 기준으로 요소를 배치한다.<br> relative 와 fixed 의 hybrid 형태로 최초에는 `relative` 처럼 동작하다가 스크롤이 특정 지점에 도달하면 요소를 고정(`fixed`) 시킬 수 있다.
 > IE 지원 불가
+
+<br>
+
 
 - box offset (`top` / `bottom` / `left` / `right`) 의 값을 __하나 이상 반드시__ 사용해야 한다.
 
