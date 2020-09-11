@@ -150,7 +150,7 @@ __자기 자신__ 을 기준으로 `box offset` 을 사용하여 위치를 이�
     left: 0;
 }
 ```
-<img src="../images/css/fixed.png" width="400">
+<img src="../images/css/fixed.png" width="410">
 
 
 ---  
