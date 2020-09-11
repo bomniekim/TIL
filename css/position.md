@@ -4,6 +4,8 @@
 
 <br>
 
+<br>
+
 ## Box Offset Properties
 
 `box offset` 이란 요소의 position 을 기준으로 한 상대적 위치와 그에 따라 정해지는 박스의 위치를 나타낸다. box offset 의 값은 `position` 을 기준으로 하는 다음과 같다.
@@ -95,7 +97,7 @@ __자기 자신__ 을 기준으로 `box offset` 을 사용하여 위치를 이�
 
 ## 3) `absolute` (절대 위치 / 위치 상의 부모)
 
-부모 요소 (__위치 상의 상위 요소__ / static 제외)를 기준으로 `box offset` 값만큼 이동한다. <br>즉, `relative`, `absolute`, `fixed` 프로퍼티가 선언되어 있는 부모 또는 조상 요소를 기준으로 위치가 결정된다.
+부모 요소 (__위치 상의 상위 요소__ / static 제외)를 기준으로 `box offset` 값만큼 이동한다. <br>즉, `relative`, `absolute`, `fixed` 가 선언되어 있는 부모 또는 조상 요소를 기준으로 위치가 결정된다.
 
 따라서 default 값인 `static` 이외에 position의 값이 설정되지 않은 경우라면 문서의 최상위 부모인 `<html>`까지 거슬러 올라간다. <br>만약 `<html>`에도 position 이 설정되지 않았다면, __뷰포트(화면 전체, window 객체)__ 를 기준으로 offset 값을 설정하여 요소를 위치시킨다.
 
@@ -154,15 +156,25 @@ __자기 자신__ 을 기준으로 `box offset` 을 사용하여 위치를 이�
 <Br>
 <Br>
 
-## 5) `sticky` (흡착 위치 /스크롤 영역)
+## 5) `sticky` (흡착 위치 / 스크롤 영역)
 
 스크롤 영역을 기준으로 요소를 배치한다. relative 와 fixed 의 hybrid 형태로 최초에는 `relative` 처럼 동작하다가 스크롤이 특정 지점에 도달하면 요소를 고정(`fixed`) 시킬 수 있다.
 > IE 지원 불가
 
-- box offset (`top` / `bottom` / `left` / `right`) 의 값을 __하나 이상 반드시__ 사용해야 작동한다.
+- box offset (`top` / `bottom` / `left` / `right`) 의 값을 __하나 이상 반드시__ 사용해야 한다.
+
+- 부여된 offset 값이 스크롤 영역에 맞닿았을 경우에만 동작한다.
 
 사용예시는 [여기](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#position_sticky)를 참조.
 
+<Br>
+<Br>
+
+---
+### References
+- [MDN CSS layout Positioning](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning)
+- [poiemaweb CSS 요소의 위치 정의](https://poiemaweb.com/css3-position)
+- [CSS Positioning 101](https://alistapart.com/article/css-positioning-101/)
 
 
 
