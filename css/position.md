@@ -53,7 +53,7 @@ top / bottom 은 위치 상의 상위 요소의 세로 너비의 비율로 지�
     line-height: 150px;
 }
 ```
-<img src="../images/css/static.png" width="400">
+<img src="../images/css/static.png" width="410">
 
 > lightgray 배경을 가진 부모 요소는 `static box` 와 정확히 일치하는 크기를 가지기 때문에 `static box` 뒤에 가려져 있음. 
 
