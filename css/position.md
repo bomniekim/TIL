@@ -177,7 +177,7 @@ __자기 자신__ 을 기준으로 `box offset` 을 사용하여 위치를 이�
 
 `absolute`, `fixed` 속성 값이 적용된 요소는 display 속성의 값이 대부분 `block`으로 수정된다.
 
-<img src="../images/css/inline-to-block.png" width="500">
+<img src="../images/css/inline-to-block.png" width="700">
 
 > `inline`, `inline-block` 요소 모두에 적용된다.
 
