@@ -86,8 +86,8 @@ top / bottom 은 위치 상의 상위 요소의 세로 너비의 비율로 지�
     left: 40px;
 }
 ```
-<img src="../images/css/relative.png" width="410">
+<img src="../images/css/relative.png" width="300">
 
-> `position: relative;`는 실제로는 자기 자신의 원래 위치에 있는 것이고 `box offset` 을 이용하여 옮긴 위치는 (잔상이다..ㅋ.ㅋㅋㅋㅋㅋ...) 형제 요소인 `child box` 의 위치가 블록 서식 맥락에 맞게 차례로 위치해 있는 것을 보면 알 수 있다. 
+> `position: relative;`는 실제로는 자기 자신의 원래 위치에 있는 것이고 `box offset` 을 이용하여 옮긴 위치는 (잔상이다..ㅋ.ㅋㅋㅋㅋㅋ...) <br>형제 요소인 `child box` 의 위치가 블록 서식 맥락에 맞게 차례로 위치해 있는 것을 보면 알 수 있다. 
 
 
