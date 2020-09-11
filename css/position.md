@@ -95,9 +95,9 @@ __자기 자신__ 을 기준으로 `box offset` 을 사용하여 위치를 이�
 
 ## 3) `absolute` (절대 위치)
 
-부모 요소 (__위치 상의 상위 요소__ / static 제외)를 기준으로 `box offset` 값만큼 이동한다. 즉, `relative`, `absolute`, `fixed` 프로퍼티가 선언되어 있는 부모 또는 조상 요소를 기준으로 위치가 결정된다.
+부모 요소 (__위치 상의 상위 요소__ / static 제외)를 기준으로 `box offset` 값만큼 이동한다. <br>즉, `relative`, `absolute`, `fixed` 프로퍼티가 선언되어 있는 부모 또는 조상 요소를 기준으로 위치가 결정된다.
 
-따라서 default 값인 `static` 이외에 position의 값이 설정되지 않은 경우라면 문서의 최상위 부모인 `<html>`까지 거슬러 올라간다. `<html>`에도 position 이 설정되지 않았다면, __뷰포트(화면 전체, window 객체)__ 를 기준으로 offset 값을 설정하여 요소를 위치시킨다.
+따라서 default 값인 `static` 이외에 position의 값이 설정되지 않은 경우라면 문서의 최상위 부모인 `<html>`까지 거슬러 올라간다. <br>만약 `<html>`에도 position 이 설정되지 않았다면, __뷰포트(화면 전체, window 객체)__ 를 기준으로 offset 값을 설정하여 요소를 위치시킨다.
 
 ```html
 <div class="box">
@@ -123,12 +123,11 @@ __자기 자신__ 을 기준으로 `box offset` 을 사용하여 위치를 이�
 ```
 <img src="../images/css/absolute.png" width="400">
 
-> absolute box를 기준으로 position 값이 설정된 가장 가까운 상위요소인 parent 를 기준으로 설정된 offset 값에 맞게 위치가  
+> `absolute box`를 기준으로 `position` 값이 설정된 가장 가까운 상위요소인 `parent` 를 기준으로 설정된 offset 값에 맞게 위치가 배치됨.
+<br> 만약 이때 다른 요소가 먼저 그 위치를 차지하고 있더라도 밀리지 않고 떠있는 상태로 덮어쓰게 된다.
 
 <br>
 
 ---  
-
-이때 다른 요소가 먼저 위치를 점유하고 있어도 뒤로 밀리지 않고 덮어쓰게 된다. (이런 특성을 부유 또는 부유 객체라 한다)
 
 
