@@ -1,10 +1,12 @@
 # Position
 
-`position` 은 요소의 위치 지정 방법(배치)의 유형(기준)을 지정하는 속성이다. <br>`top`, `bottom`, `left`, `right` 속성과 함께 사용하여 위치를 지정한다.
+`position` 은 요소의 위치 지정 방법(배치)의 유형(기준)을 지정하는 속성이다. <br> `box offset` 속성과 함께 사용하여 위치를 지정한다.
 
 <br>
 
-## Box Offset
+## Box Offset Properties
+
+`box offset` 이란 요소의 position 을 기준으로 한 상대적 위치와 그에 따라 정해지는 박스의 위치를 나타낸다. box offset 의 값은 다음과 같다.
 
 - `top`
 
@@ -14,6 +16,7 @@
 
 - `left`
 
+<br>
 
 
 ## 1) `static` (기본 위치)
