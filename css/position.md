@@ -128,7 +128,7 @@ __자기 자신__ 을 기준으로 `box offset` 을 사용하여 위치를 이�
 
 <br>
 
-<img src="../images/css/absolute-viewport.png" width="400">
+<img src="../images/css/absolute-viewport.png" width="450">
 
 > `parent` 에 `position` 값이 설정되어 있지 않는 경우 그 위의 어떠한 상위 요소에도 `position` 값이 지정되어 있지 않기 때문에 __`Viewport`__ 를 기준으로 offset 을 설정하여 요소를 위치시킨다.
 
