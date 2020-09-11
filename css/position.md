@@ -121,7 +121,7 @@ __자기 자신__ 을 기준으로 `box offset` 을 사용하여 위치를 이�
     left: 40px;
 }
 ```
-<img src="../images/css/absolute.png" width="300">
+<img src="../images/css/absolute.png" width="400">
 
 > absolute box를 기준으로 position 값이 설정된 가장 가까운 상위요소인 parent 를 기준으로 설정된 offset 값에 맞게 위치가  
 
