@@ -74,7 +74,6 @@
 |`repeat-x`|배경 이미지를 수평으로 반복||
 |`repeat-y`|배경 이미지를 수직으로 반복||
 |`no-repeat`|반복 없음||
-<br>
 
 #### 사용예시는 [여기](https://developer.mozilla.org/ko/docs/Web/CSS/background-repeat)를 참조.
 
@@ -138,7 +137,7 @@
 
 |값|의미|default|
 |---|---|---|
-|auto|배경 이미지가 원래의 크기로 표시|✔︎|
+|`auto`|배경 이미지가 원래의 크기로 표시|✔︎|
 |단위| - px, em, % 등 단위로 지정<br> - width, height 형태로 입력 가능 (e.g `120px 330px`)<br> - width 만 입력하면 비율에 맞게 지정됨 (e.g `120px`)||
 |`cover`| - 배경 이미지의 크기 비율을 유지하며, 요소의 더 __넓은__ 너비에 맞춰짐<br> - 이미지가 잘릴 수 있음 
 |`contain`| - 배경 이미지의 크기 비율을 유지하며, 요소의 더 __좁은__ 너비에 맞춰짐<br> - 이미지가 잘리지 않음
@@ -172,24 +171,30 @@
 
 > 요소의 __좁은__ 너비(300px)에 맞추어 요소 사이즈 조절.
 
-
-
-
-
 <br>
 <br>
 
-## 단축 속성
+
+### 단축 속성(shorthand)
 
 ```css
-  background: color || imgUrl || repeat || attachment || position
+  background: color || imgUrl || repeat || position || attachment
 ```
+<br>
 
+### 접근성 고려사항
 
+브라우저는 배경 이미지에 대한 어떠한 추가적인 정보를 접근성 보조 기술에 제공하지 않는다. 특히 스크린 리더의 경우 배경 이미지의 존재 유무조차 알려주지 않는다. 그렇기 때문에 이미지가 페이지 를 이해하거나 설명하는 데 필수적인 정보를 갖고 있다면 문서에서 semantic하게 설명하는 편이 좋다.
 
+> 예를 들어
+[text-intent를 이용한 웹 접근성
+](https://github.com/bomniekim/TIL/blob/master/css/font.md#user-content-text-intent%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1) 등을 사용하자!
 
+<br>
+<br>
 
 --- 
 ### References
 - [background via MDN](https://developer.mozilla.org/ko/docs/Web/CSS/background)
 - [poiemaweb CSS background](https://poiemaweb.com/css3-background)
+- [CSS background - Shorthand property](https://www.w3schools.com/css/css_background_shorthand.asp)
