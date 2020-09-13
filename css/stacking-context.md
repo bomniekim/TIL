@@ -22,6 +22,7 @@ Stacking Context 는 가상의 `z-index`을 사용한 HTML 요소의 3차원 개
 stacking context 는 문서 어디에서나, 다음 조건 등을 만족하는 요소가 생성합니다.
 
 - 문서의 최상위 요소 (`<html>`)
+
 - position 속성이 지정된 요소 중 `static` 이 아니면서 `z-index`가 auto가 아닌 요소
 - `flexbox`의 자식 요소 중 z-index가 auto가 아닌 요소
 - `grid` 의 자식 요소 중 z-index가 auto가 아닌 요소
@@ -49,6 +50,8 @@ position > z-index > html 마지막 코드
 ```
 <img src="../images/css/stacking-order.png">
 
+<Br>
+<Br>
 ---
 ### References
 - [stacking context via MDN](https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
