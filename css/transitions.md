@@ -35,7 +35,25 @@ transition-duration 프로퍼티값은 transition-property 프로퍼티값과 1:
 
 ### 3) `transition-timing-function`
 
-타이밍 함수(애니메이션 효과를 계산하는 방법)을 지정한다.
+
+타이밍 함수(애니메이션 효과를 계산하는 방법)을 사용하여 transition의 진행 속도를 조절한다.
+
+|값|의미|cubic-bezier()값|default|
+|---|---|---|---|
+|`ease`|빠르게-느리게|(.25, .1, .25, 1)|✔︎|
+|`linear`|일정하게|(0, 0, 1, 1)||
+|`ease-in`|느리게-빠르게|(.42, 0, 1, 1)|
+|`ease-out`|빠르게-느리게|(0, 0, .58, 1)|
+|`ease-in-out`|느리게-빠르게-느리게|(.42, 0, .58, 1)|
+|`cubic-bezier( n, n, n, n )`| 자신만의 정의(`0~1`)|
+|`steps(n)`|`n`번 분할된 애니메이션|
+|`inherit`|부모 요소의 속성 값 상속|
+
+<Br>
+
+- [cubic-bezier()](https://www.w3schools.com/cssref/func_cubic-bezier.asp)를 사용할 때 쓰는 값은 [여기](https://cubic-bezier.com/#.17,.67,.83,.67)를 참조.
+
+> 사용예시는 [여기](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function)에서 확인
 
 <Br>
 <Br>
