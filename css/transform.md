@@ -6,11 +6,13 @@
 
 단 애니메이션 효과를 제공하지는 않기 때문에 정의된 프로퍼티가 바로 적용되어 화면에 표시된다. 따라서 애니메이션 효과를 부여할 필요가 있다면 `transition`이나 `animatino`과 함께 사용해야 한다.
 
+<Br>
+
 ## 2D Transfrom
 
 2D transform 은 속성 값으로 변환함수(transform function)를 사용한다. 변환함수는 다음과 같다.
 
-<img src="../images/css/2d-transform.png">
+<img src="../images/css/2d-transform.png" width="600">
 
 
 ## 단축 속성
