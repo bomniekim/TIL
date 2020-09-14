@@ -12,7 +12,7 @@
 
 2D transform 은 속성 값으로 변환함수(transform function)를 사용한다. 변환함수는 다음과 같다.
 
-<img src="../images/css/2d-transform.png" width="600">
+<img src="../images/css/2d-transform.png" width="700">
 
 
 ## 단축 속성
