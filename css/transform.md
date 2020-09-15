@@ -17,6 +17,10 @@
 <br>
 <br>
 
+### 1) `translate`
+
+요소를 X축 또는 Y축의 이동 값에 따라 수평/수직으로 재배치한다.
+
 ## 3D Transform
 
 <br>
@@ -24,6 +28,6 @@
 
 ## 단축 속성
 ```
-  transform: 변환함수1, 변환함수2, 변환함수3 ...;
+  transform: func1, func2, func3 ...;
   transfrom: 원근법 이동 크기 회전 기울임;
 ```
