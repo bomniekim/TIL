@@ -15,13 +15,37 @@
 <img src="../images/css/2d-transform.png" width="700">
 
 <br>
-<br>
 
-### 1) `translate`
+### 1) `translate`(이동)
 
 요소를 X축 또는 Y축의 이동 값에 따라 수평/수직으로 재배치한다.
 
+<br>
+
+### 2) `scale`(확대/축소)
+
+요소의 크기를 X축으로 x배, Y축으로 y배 확대 또는 축소 시킨다.
+
+<br>
+
+### 3) `rotate`(회전)
+
+요소를 지정한 각도만큼 회전시킨다.
+
+<br>
+
+### 4) `skew`(비틀기/기울임)
+
+요소를 X축으로 x 각도만큼, Y축으로 y 각도만큼 기울인다.
+
+<br>
+
+<img src="../images/css/2d-transform-ex.png" width="400">
+
 ## 3D Transform
+
+
+
 
 <br>
 <br>
