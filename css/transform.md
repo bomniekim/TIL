@@ -44,9 +44,25 @@
 
 <img src="../images/css/2d-transform-ex.png" width="400">
 
+<br>
+<br>
+
+### position vs. translate()
+
+`position` 은 말 그대로, 요소를 특정 지점에 배치하고 끝나는 개념이지만 `translate` 은 좌표 공간을 변형하여 다른 요소에 영향을 미치지 않고 위치를 변경할 수 있다.
+
+요소를 특정 위치에 위치시키기 위한 것이 `position` 의 성격인 반면, 움직임이 필요한 모션의 경우는 `translate` 을 지정해야 한다.
+
+즉, `translate` 이 애니메이션에 최적화된 방법인 것이다.
+
+<img src="../images/css/position-vs-translate.png">
+
+> 위의 경우는 transform-translate, 아래는 position - top/left 활용 
+
+<br>
+<br>
+
 ## 3D Transform
-
-
 
 
 <br>
@@ -57,3 +73,7 @@
   transform: func1, func2, func3 ...;
   transfrom: 원근법 이동 크기 회전 기울임;
 ```
+
+---
+### References
+- [translate() vs positioning 비교](https://mygumi.tistory.com/238)
