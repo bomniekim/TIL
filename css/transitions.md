@@ -81,6 +81,8 @@ transition-duration 프로퍼티값은 transition-property 프로퍼티값과 1:
 }
 ```
 
+- `transition` 은 변형하고자 하는 본래의 요소에 지정하는 것이 적합하다.
+
 <br>
 <br>
 
