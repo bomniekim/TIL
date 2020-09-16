@@ -68,8 +68,67 @@
 
 <img src="../images/css/3d-transform.png" width="700">
 
+> `transform` 단축 속성에서 여러 변형 함수를 함께 `perspective()` 를 사용하는 경우 __가장 먼저__ 작성해야 적용된다.
+
 <br>
 <br>
+
+## `transform` 관련 속성
+
+### 1) `transform-origin`
+
+요소 변환의 기준점을 설정한다.
+
+```css
+  transform-origin: x y z;
+
+  /* default : 요소의 정중앙 */
+  transform-origin: 50% 50% 0;
+```
+
+|값|의미|default|
+|---|---|---|
+|X축|`left`, `right`, `center`, `%`, 단위|50%|
+|Y축|`left`, `right`, `center`, `%`, 단위|50%|
+|Z축||0|
+
+<br>
+
+> 다양한 사용예시는 [여기](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin)를 참조.
+
+<Br>
+
+
+### 2) `transform-style`
+
+3D 변환 요소의 하위 요소도 3D 변환을 사용할 지 설정한다. 
+
+|값|의미|default|
+|---|---|---|
+|`flat`|하위 요소에 3D 변환을 사용하지 않음|✔︎|
+|`preserve-3d`|하위 요소에 3D 변환을 사용함||
+
+<br>
+
+> 다양한 사용예시는 [여기](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style)를 참조.
+
+<br>
+
+### 3) `perspective`
+
+__하위 요소__ 를 관찰하는 원근 거리를 설정한다. 
+
+### 4) `perspective-origin`
+
+원근 거리의 기준점을 설정한다. 
+
+### 5) `backface-visibility`
+
+3D 변환으로 회전된 요소의 뒷면 숨김을 설정한다.
+
+
+
+
 
 ## 단축 속성
 ```
