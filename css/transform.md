@@ -47,9 +47,9 @@
 <br>
 <br>
 
-### position vs. translate()
+## position vs. translate()
 
-`position` 은 말 그대로, 요소를 특정 지점에 배치하고 끝나는 개념이지만 `translate` 은 좌표 공간을 변형하여 다른 요소에 영향을 미치지 않고 위치를 변경할 수 있다.
+`position` 은 말 그대로, 요소를 특정 지점에 배치하고 끝나는 개념이지만<br> `translate` 은 좌표 공간을 변형하여 다른 요소에 영향을 미치지 않고 위치를 변경할 수 있다.
 
 요소를 특정 위치에 위치시키기 위한 것이 `position` 의 성격인 반면, 움직임이 필요한 모션의 경우는 `translate` 을 지정해야 한다.
 
