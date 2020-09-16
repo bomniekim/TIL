@@ -103,6 +103,7 @@
 
 3D 변환 요소의 하위 요소도 3D 변환을 사용할 지 설정한다. 
 
+
 |값|의미|default|
 |---|---|---|
 |`flat`|하위 요소에 3D 변환을 사용하지 않음|✔︎|
@@ -110,13 +111,61 @@
 
 <br>
 
-> 다양한 사용예시는 [여기](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style)를 참조.
+> 사용예시는 [여기](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style)를 참조.
 
 <br>
 
 ### 3) `perspective`
 
-__하위 요소__ 를 관찰하는 원근 거리를 설정한다. 
+__하위 요소__ 를 관찰하는 원근 거리를 설정한다.  따라서 3D 변형을 관찰할 요소들의 상위 요소에 이 속성을 지정해야 합니다.
+
+|값|의미|default|
+|---|---|---|
+|단위|`px`, `em`, `cm` 등 단위로 지정||
+
+<br>
+
+```css
+.perspective{
+  width: 200px;
+  perspective: 500px;
+  padding: 70px;
+}
+
+.grand-parent{
+  width: 300px;
+  border: 3px solid dodgerblue;
+  transition: 1s;
+  transform: rotateX(-45deg);
+  transform-style: preserve-3d; 
+}
+
+.parent{
+  width: 300px;
+  border: 3px solid tomato;
+  transition: 1s;
+  transform: rotateY(45deg);
+  transform-style: preserve-3d;
+}
+img{
+  width: 300px;
+  border: 3px solid yellowgreen;
+  transition: 1s;
+  transform: rotateX(45deg);
+}
+```
+
+<img src="../images/css/perspective.png" width="300px">
+
+
+<br>
+
+#### `transform: perspective()`와의 차이점?
+
+`perspective` 속성은 관찰 대상의 상위 요소에 적용하여 하위 요소들을 관찰하는 원근 거리를 설정하며, 그 기준점은 `perspective-origin` 에 지정한다. 반면, `transform: perspective()` 변환 함수는 관찰 대상에 직접 적용하여 그 대상을 관찰하는 원근 거리를 설정한다. 기준점은 `transform-origin` 속성에 지정한다.
+
+<br>
+
 
 ### 4) `perspective-origin`
 
