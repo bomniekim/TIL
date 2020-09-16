@@ -89,7 +89,7 @@
 |값|의미|default|
 |---|---|---|
 |X축|`left`, `right`, `center`, `%`, 단위|50%|
-|Y축|`left`, `right`, `center`, `%`, 단위|50%|
+|Y축|`top`, `bottom`, `center`, `%`, 단위|50%|
 |Z축||0|
 
 <br>
@@ -101,8 +101,7 @@
 
 ### 2) `transform-style`
 
-3D 변환 요소의 하위 요소도 3D 변환을 사용할 지 설정한다. 
-
+3D 변환 요소의 하위 요소도 3D 변환을 사용할 지 설정한다. 즉, 하위 요소에 3D 변환을 상속하기 위해서는 상위 요소에 `transform-style`의 값을 설정해야 한다.  
 
 |값|의미|default|
 |---|---|---|
@@ -128,14 +127,13 @@ __하위 요소__ 를 관찰하는 원근 거리를 설정한다.  따라서 3D 
 ```css
 .perspective{
   width: 200px;
+  /* 원근 거리를 관찰하는 지점을 관찰할 요소의 가운데로 지정하기 위해 요소의 너비와 일치시킨다., 기본값은 뷰포트 너비이고 이는 뷰포트의 중앙을 의미한다. */
   perspective: 500px;
-  padding: 70px;
 }
 
 .grand-parent{
   width: 300px;
   border: 3px solid dodgerblue;
-  transition: 1s;
   transform: rotateX(-45deg);
   transform-style: preserve-3d; 
 }
@@ -143,14 +141,12 @@ __하위 요소__ 를 관찰하는 원근 거리를 설정한다.  따라서 3D 
 .parent{
   width: 300px;
   border: 3px solid tomato;
-  transition: 1s;
   transform: rotateY(45deg);
   transform-style: preserve-3d;
 }
 img{
   width: 300px;
   border: 3px solid yellowgreen;
-  transition: 1s;
   transform: rotateX(45deg);
 }
 ```
@@ -162,14 +158,29 @@ img{
 
 #### `transform: perspective()`와의 차이점?
 
-`perspective` 속성은 관찰 대상의 상위 요소에 적용하여 하위 요소들을 관찰하는 원근 거리를 설정하며, 그 기준점은 `perspective-origin` 에 지정한다. 반면, `transform: perspective()` 변환 함수는 관찰 대상에 직접 적용하여 그 대상을 관찰하는 원근 거리를 설정한다. 기준점은 `transform-origin` 속성에 지정한다.
+`perspective` 속성은 관찰 대상의 __상위 요소에 적용__ 하여 하위 요소들을 관찰하는 원근 거리를 설정하며, 그 기준점은 `perspective-origin` 에 지정한다.
+
+반면, `transform: perspective()` 변환 함수는 __관찰 대상에 직접 적용__ 하여 그 대상을 관찰하는 원근 거리를 설정한다. 기준점은 `transform-origin` 속성에 지정한다.
 
 <br>
 
 
 ### 4) `perspective-origin`
 
-원근 거리의 기준점을 설정한다. 
+원근 거리의 기준점을 __관찰할 요소들의 상위 요소__(`perspective` 속성이 지정되어 있는 요소)에 설정한다. 
+
+|값|의미|default|
+|---|---|---|
+|X축|`left`, `right`, `center`, `%`, 단위| `50%`|
+|Y축|`left`, `right`, `center`, `%`, 단위| `50%`|
+
+> default 는 `perspective` 속성을 설정한 요소의 정중앙
+
+<img src="../images/css/perspective-origin.png" width="500">
+
+> 눈동자의 위치가 `perspective-origin` 으로 설정한 값이다.
+
+<br>
 
 ### 5) `backface-visibility`
 
