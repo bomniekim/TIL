@@ -213,13 +213,16 @@ img{
   transform: func1, func2, func3 ...;
   transfrom: 원근법 이동 크기 회전 기울임;
 
-.app{
+.box {
     transform: perspective(500px) rotate(20deg) translate(10px, 0);
 }
 ```
 
+<br>
+
+
 ---
 ### References
 - [transform via MDN](https://developer.mozilla.org/ko/docs/Web/CSS/transform)
-- [CSS transform via poiemaweb](https://poiemaweb.com/css3-transform)
+- [CSS transform via poiemaweb](https://poiemaweb.com/css3-transform) 
 - [translate() vs positioning 비교](https://mygumi.tistory.com/238)
