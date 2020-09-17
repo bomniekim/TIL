@@ -199,15 +199,27 @@ img{
 <Br>
 <Br>
 
+## `matrix()`
+
+위의 2D/3D 변형 함수(이동, 확대/축소, 회전, 기울임)의 단축 속성이다.
+> 위의 일반 함수들을 사용하여 `transform` 을 작성하더라도, 브라우저는 matrix 함수(2D 변형 함수는 `matrix` 로, 3D 변형 함수는 `matrix3d`)로 변환하여 변형을 계산한다. 따라서 일반적인 경우는 일반 함수들을 사용하면 된다.
 
 
+<br>
 
 ## 단축 속성
-```
+
+```css
   transform: func1, func2, func3 ...;
   transfrom: 원근법 이동 크기 회전 기울임;
+
+.app{
+    transform: perspective(500px) rotate(20deg) translate(10px, 0);
+}
 ```
 
 ---
 ### References
+- [transform via MDN](https://developer.mozilla.org/ko/docs/Web/CSS/transform)
+- [CSS transform via poiemaweb](https://poiemaweb.com/css3-transform)
 - [translate() vs positioning 비교](https://mygumi.tistory.com/238)
