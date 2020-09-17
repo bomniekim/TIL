@@ -186,6 +186,18 @@ img{
 
 3D 변환으로 회전된 요소의 뒷면 숨김을 설정한다.
 
+|값|의미|default|
+|---|---|---|
+|visible|뒷면 숨기지 않음|✔︎|
+|hidden|뒷면 숨김|
+
+<br>
+
+> 사용예시는 [여기](https://developer.mozilla.org/ko/docs/Web/CSS/backface-visibility)를 참조.
+
+
+<Br>
+<Br>
 
 
 
