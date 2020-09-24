@@ -50,7 +50,7 @@
 <br>
 <br>
 
-### 3) animation-timing-function
+### 3) `animation-timing-function`
 
 애니메이션을 위한 타이밍 함수를 지정한다. [transition-timing-function](https://github.com/bomniekim/TIL/blob/master/css/transitions.md#3-transition-timing-function)과 같은 함수를 사용한다. 
 
@@ -66,6 +66,49 @@
 |시간|대기 시간을 설정|`0s`|
 
 > 단축 속성에서 초 단위 값이 2 개 인 경우, 앞의 값이 `duration`, 뒤의 값이 `delay`이다.
+
+<br>
+<br>
+
+### 5) `animation-iteration-count`
+
+애니메이션의 반복 횟수를 설정한다. 
+
+|값|의미|default|
+|---|---|---|
+|숫자|반복 횟수를 설정|`1`|
+|infinite|무한 반복||
+
+
+<br>
+<br>
+
+### 6) `animation-direction`
+
+애니메이션이 종료된 이후 반복될 때 진행하는 방향을 지정한다.
+
+|값|의미|default|
+|---|---|---|
+|`normal`|정방향으로 반복|✔︎|
+|`reverse`|역방향으로 반복||
+|`alternate`|정방향에서 역방향으로 왕복||
+|`alternate-reverse`|역방향에서 정방향으로 왕복||
+
+> `alternate` 와 `alternate-reverse` 는 `animation-iteration-count` 를 2 소비한다.
+
+<br>
+<br>
+
+### 7) `animation-fill-mode`
+
+애니메이션의 실행 전후 요소의 상태(위치)를 설정한다.
+
+|값|의미|default|
+|---|---|---|
+|`none`|기존 위치에서 시작 → 애니메이션 시작 위치로 이동 → 동작 → 기존 위치에서 끝|✔︎|
+|`forwards`|기존 위치에서 시작 → 애니메이션 시작 위치로 이동 → 동작 → 애니메이션 끝 위치에서 끝|
+|`backwards`|애니메이션 시작 위치에서 시작 → 동작 → 기존 위치에서 끝|
+|`both`|애니메이션 시작 위치에서 시작 → 동작 → 애니메이션 끝 위치에서 끝|
 
 
 
