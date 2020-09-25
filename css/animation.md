@@ -103,22 +103,33 @@
 
 애니메이션의 실행 전후 요소의 상태(위치)를 설정한다.
 
+<Br>
 
 - `none` : 기존 위치에서 시작 → 애니메이션 시작 위치로 이동 → 동작 → 기존 위치에서 끝
 
 <img src="../images/css/fill-mode-none.png" width="600">
 
+<Br>
+
 - `forwards`: 기존 위치에서 시작 → 애니메이션 시작 위치로 이동 → 동작 → 애니메이션 끝 위치에서 끝
 
 <img src="../images/css/fill-mode-forwards.png" width="600">
+
+<Br>
 
 - `backwards`: 애니메이션 시작 위치에서 시작 → 동작 → 기존 위치에서 끝
 
 <img src="../images/css/fill-mode-backwards.png" width="600">
 
+<Br>
+
 - `both`: 애니메이션 시작 위치에서 시작 → 동작 → 애니메이션 끝 위치에서 끝
 
 <img src="../images/css/fill-mode-both.png" width="600">
+
+<Br>
+<Br>
+
 
 
 
