@@ -105,25 +105,28 @@
 
 <Br>
 
-- `none` : 기존 위치에서 시작 → 애니메이션 시작 위치로 이동 → 동작 → 기존 위치에서 끝
+- __`none`__ : 기존 위치에서 시작 → 애니메이션 시작 위치로 이동 → 동작 → 기존 위치에서 끝
 
 <img src="../images/css/fill-mode-none.png" width="600">
 
 <Br>
+<Br>
 
-- `forwards`: 기존 위치에서 시작 → 애니메이션 시작 위치로 이동 → 동작 → 애니메이션 끝 위치에서 끝
+- __`forwards`__: 기존 위치에서 시작 → 애니메이션 시작 위치로 이동 → 동작 → 애니메이션 끝 위치에서 끝
 
 <img src="../images/css/fill-mode-forwards.png" width="600">
 
 <Br>
+<Br>
 
-- `backwards`: 애니메이션 시작 위치에서 시작 → 동작 → 기존 위치에서 끝
+- __`backwards`__: 애니메이션 시작 위치에서 시작 → 동작 → 기존 위치에서 끝
 
 <img src="../images/css/fill-mode-backwards.png" width="600">
 
 <Br>
+<Br>
 
-- `both`: 애니메이션 시작 위치에서 시작 → 동작 → 애니메이션 끝 위치에서 끝
+- __`both`__: 애니메이션 시작 위치에서 시작 → 동작 → 애니메이션 끝 위치에서 끝
 
 <img src="../images/css/fill-mode-both.png" width="600">
 
