@@ -105,7 +105,7 @@
 
 <Br>
 
-- __`none`__ : 기존 위치에서 시작 → 애니메이션 시작 위치로 이동 → 동작 → 기존 위치에서 끝
+- __`none`__ : 기존 위치에서 시작 → 애니메이션 시작 위치로 이동 → 동작 → 기존 위치에서 끝 (default)
 
 <img src="../images/css/fill-mode-none.png" width="600">
 
@@ -130,10 +130,32 @@
 
 <img src="../images/css/fill-mode-both.png" width="600">
 
+> `both` 는 요소의 기존의 위치로 절대 이동하지 않는다.
+
 <Br>
 <Br>
 
+### 8) `animation-play-state`
 
+애니메이션의 재생과 정지를 설정한다. 
+
+|값|의미|default|
+|---|---|---|
+|running|애니메이션을 동작|✔︎|
+|paused|애니메이션 동작을 정지|
+
+<br>
+<br>
+
+## `animation` 단축 속성
+
+모든 애니메이션 프로퍼티를 한번에 지정한다. 값을 지정하지 않은 프로퍼티에는 기본값이 지정된다. 지정 방법은 다음과 같다.
+
+```css
+animation: name duration timing-function delay iteration-count direction fill-mode play-state
+```
+
+## Multi-Columns
 
 
 
