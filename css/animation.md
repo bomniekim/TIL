@@ -230,13 +230,16 @@ column-rule: width style color;
 <img src="../images/css/column.png" width="700">
 
 <br>
+<br>
 
 <hr>
 
 ### References
 
-
-
+- [animation via MDN](https://developer.mozilla.org/ko/docs/Web/CSS/animation)
+- [poiemaweb animation](https://poiemaweb.com/css3-animation)
+- [codepen animation-fill-mode](https://codepen.io/heropark/pens/public?cursor=ZD0xJm89MCZwPTEmdj0zODMzNTg1MA==)
+- [multi columns via MDN](https://developer.mozilla.org/ko/docs/CSS3_Columns)
 
 
 
