@@ -168,6 +168,7 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 다단을 정의하는 단축 속성이다.
 
 - `auto`: 브라우저가 단의 너비와 개수를 설정
+
 - `column-width`
 - `column-count`
 
@@ -223,6 +224,12 @@ column-rule: width style color;
 ```
 
 > (구분)선은 단과 단 사이의 간격 중간에 위치한다. 요소의 글자색(color)을 지정할 경우 column-rule 도 영향을 받는다.
+
+<br>
+
+<img src="../images/css/column.png" width="500">
+
+<br>
 
 <hr>
 
