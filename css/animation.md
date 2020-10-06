@@ -227,7 +227,7 @@ column-rule: width style color;
 
 <br>
 
-<img src="../images/css/column.png" width="500">
+<img src="../images/css/column.png" width="700">
 
 <br>
 
