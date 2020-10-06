@@ -65,7 +65,7 @@
 |---|---|---|
 |시간|대기 시간을 설정|`0s`|
 
-> 단축 속성에서 초 단위 값이 2 개 인 경우, 앞의 값이 `duration`, 뒤의 값이 `delay`이다.
+> 단축 속성에서 초 단위 값이 `2` 개 인 경우, 앞의 값이 `duration`, 뒤의 값이 `delay`이다.
 
 <br>
 <br>
@@ -155,7 +155,88 @@
 animation: name duration timing-function delay iteration-count direction fill-mode play-state
 ```
 
-## Multi-Columns
+<br>
+<br>
+
+## Multi-Columns (다단)
+
+한 화면에서 텍스트의 가독성을 확보하기 위해 일반 블록 레이아웃을 확장하여 여러 텍스트 단을 나란히 놓아 화면에 배치한다. 
+
+<br>
+
+### `columns`
+다단을 정의하는 단축 속성이다.
+
+- `auto`: 브라우저가 단의 너비와 개수를 설정
+- `column-width`
+- `column-count`
+
+<br>
+
+#### `column-width`
+단의 최적 너비를 설정한다.
+
+|값|의미|default|
+|---|---|---|
+|`auto`|브라우저가 단의 너비를 설정|✔︎|
+|단위|px, em, cm 등의 단위로 지정|
+
+> 각 단이 줄어들 수 있는 최적 너비(최소 너비)를 설정하며, 요소의 너비가 가변하여 하나의 단이 최적 너비보다 줄어들 경우 단의 개수가 조정된다.
+
+<br>
+<br>
+
+#### `column-count`
+단의 개수를 설정한다.
+
+|값|의미|default|
+|---|---|---|
+|`auto`|브라우저가 단의 개수를 설정|✔︎|
+|숫자|단위 개수를 직접 설정|
+
+<br>
+<br>
+
+#### `column-gap`
+단과 단 사이의 간격을 설정한다.
+
+|값|의미|default|
+|---|---|---|
+|`normal`|브라우저가 단과 단 사이의 간격을 설정(1em)|✔︎|
+|단위|px, em, cm 등의 단위로 지정|
+
+<br>
+<br>
+
+### `column-rule`
+
+단과 단 사이의 (구분)선을 지정하는 단축 속성이다.
+
+|값|의미|default|
+|---|---|---|
+|`column-width`|선의 두께를 지정|`medium`|
+|`column-style`|선의 종류를 지정|`none`|
+|`column-color`|선의 색상을 지정|요소의 글자색과 동일|
+
+```css
+column-rule: width style color;
+```
+
+> (구분)선은 단과 단 사이의 간격 중간에 위치한다. 요소의 글자색(color)을 지정할 경우 column-rule 도 영향을 받는다.
+
+<hr>
+
+### References
+
+
+
+
+
+
+
+
+
+
 
 
 
