@@ -37,7 +37,6 @@ transition-duration 프로퍼티값은 transition-property 프로퍼티값과 1:
 
 ### 3) `transition-timing-function`
 
-
 타이밍 함수(애니메이션 효과를 계산하는 방법)을 사용하여 transition의 진행 속도를 조절한다. [eaisng 함수](https://easings.net/ko)라고도 한다.
 
 |값|의미|cubic-bezier()값|default|
