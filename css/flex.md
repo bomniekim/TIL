@@ -35,6 +35,44 @@ flex container(부모 요소)의 layout 배치를 정하는 속성이다.
 <br>
 <br>
 
+### 2) `flex-direction`
+
+flex container의 __주축(main axis)__ 방향을 설정한다.
+
+|값|의미|default|
+|---|---|---|
+|`row`|items를 왼쪽에서 오른쪽(수평축)으로 표시|✔︎|
+|`row-reverse`|items를 오른쪽에서 왼쪽(반대 수평축)으로 표시||
+|`column`|items를 위에서 아래(수직축)로 표시||
+|`column-reverse`|items를 아래에서 위(반대 수직축)로 표시||
+
+<br>
+
+<img src="../images/css/flex-direction.png" width="600">
+
+
+
+### 주 축(main-axis)과 교차 축(cross-axis)
+
+위에서 언급했었던 주 축(main-axis)과 교차 축(cross-axis)의 개념은 다음과 같습니다.
+값 row는 Items를 수평축으로 표시하므로 이때는 주 축이 수평이며 교차 축은 수직이 됩니다.
+반대로 값 column은 Items를 수직축으로 표시하므로 주 축은 수직이며 교차 축은 수평이 됩니다.
+즉, 방향(수평, 수직)에 따라 주 축과 교차 축이 달라집니다.
+
+
+### 시작점(flex-start)과 끝점(flex-end)
+
+시작점(flex-start)과 끝점(flex-end)이라는 개념도 있습니다.
+이는 주 축이나 교차 축의 시작하는 지점과 끝나는 지점을 지칭합니다.
+역시 방향에 따라 시작점과 끝점이 달라집니다.
+
+
+
+<hr>
+
+### References
+- [Understanding the CSS3 Flexbox](http://blogs.quovantis.com/understanding-the-css3-flexbox/)
+
 
 
 
