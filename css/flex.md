@@ -93,7 +93,7 @@ flex container의 __주축(main axis)__ 방향을 설정한다.
 
 <img src="../images/css/flex-wrap.png" width="600">
 
-> flex-direction: row; 인 경우
+> <code>flex-direction: row</code> 인 경우
 
 
 <br>
