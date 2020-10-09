@@ -16,6 +16,31 @@
 
 <img src="../images/css/flex-base.jpg" width="600">
 
+<br>
+<br>
+
+
+> ### 주 축(main-axis)과 교차 축(cross-axis) 
+> flexbox 에서 축(axis)의 개념은 container의 자식 요소인 items의 배치 흐름의 방향에 대한 것이다.<br>
+주 축은 배치 흐름과 같은 방향의 축을 말하고, 교차 축은 주 축을 가로 지르는 축을 말한다.<Br>
+값 `row`는 items를 __수평__ 축으로 배치하므로 이때는 주 축이 수평이며 교차 축은 수직이 된다.<br>
+반대로 값 `column`은 items를 __수직__ 축으로 배치하므로 주 축은 수직이, 교차 축은 수평이 된다.<br>
+_즉, 방향(수평, 수직)에 따라 주 축과 교차 축이 달라진다._
+
+<br>
+
+> ### 시작점(flex-start)과 끝점(flex-end)
+> 시작점(`flex-start`)과 끝점(`flex-end`)이라는 개념도 있다.<br>
+이는 주 축이나 교차 축의 시작하는 지점(axis start)과 끝나는 지점(axis end)을 지칭하는 것으로써 이 역시 방향에 따라 시작점과 끝점이 달라진다.
+
+<img src="../images/css/flex-axis.png" width="700">
+
+
+
+<br>
+<br>
+
+
 
 ### Flex Container 속성
 
@@ -51,26 +76,6 @@ flex container의 __주축(main axis)__ 방향을 설정한다.
 <img src="../images/css/flex-direction.png" width="600">
 
 <br>
-<br>
-
-<img src="../images/css/flex-axis.png" width="700">
-
-
-> ### 주 축(main-axis)과 교차 축(cross-axis) 
-> flexbox 에서 축(axis)의 개념은 container의 자식 요소인 items의 배치 흐름의 방향에 대한 것이다.<br>
-주 축은 배치 흐름과 같은 방향의 축을 말하고, 교차 축은 주 축을 가로 지르는 축을 말한다.<Br>
-값 `row`는 items를 __수평__ 축으로 배치하므로 이때는 주 축이 수평이며 교차 축은 수직이 된다.<br>
-반대로 값 `column`은 items를 __수직__ 축으로 배치하므로 주 축은 수직이, 교차 축은 수평이 된다.<br>
-_즉, 방향(수평, 수직)에 따라 주 축과 교차 축이 달라진다._
-
-<br>
-
-> ### 시작점(flex-start)과 끝점(flex-end)
-> 시작점(`flex-start`)과 끝점(`flex-end`)이라는 개념도 있다.<br>
-이는 주 축이나 교차 축의 시작하는 지점(axis start)과 끝나는 지점(axis end)을 지칭하는 것으로써 이 역시 방향에 따라 시작점과 끝점이 달라진다.
-
-
-
 <br>
 
 
