@@ -79,7 +79,25 @@ flex container의 __주축(main axis)__ 방향을 설정한다.
 <br>
 
 
-### 3) 
+### 3) `flex-wrap`
+
+기본적으로 items는 _한 줄에서만 표시되고 줄 바꿈 되지 않는다._<br>
+`flex-wrap`은 items를 강제로 한 줄에 배치되게 할 것인지, 혹은 가능한 영역 내에서 벗어나지 않고 여러 행으로 나누어 배치할 것인지 결정하는 속성이다.<br>
+배치의 시작점은 `flex-direction` 에 의해 결정된 방향으로 적용된다.
+
+|값|의미|default|
+|---|---|---|
+|`nowrap`|모든 items를 한 줄에 표시|✔︎|
+|`wrap`|items를 여러 줄로 묶음||
+|`wrap-reverse`|items를 wrap의 역 방향으로 여러 줄로 묶음|
+
+<img src="../images/css/flex-wrap.png" width="600">
+
+> flex-direction: row; 인 경우
+
+
+<br>
+<br>
 
 <hr>
 
