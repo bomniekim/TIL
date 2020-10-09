@@ -99,10 +99,37 @@ flex container의 __주축(main axis)__ 방향을 설정한다.
 <br>
 <br>
 
+### `flex-flow`
+
+`flex-flow`는 `flex-direction` 속성과 `flex-wrap` 속성을 설정하기 위한 단축 속성이다. 기본값은 `row nowrap`이다.
+
+```css
+.flex-container {
+  flex-flow: flex-direction flex-wrap;
+}
+```
+
+<br>
+<br>
+
+### 4) `justify-content`
+
+flex container의 주 축(main axis)을 기준으로 items의 정렬 방법을 설정한다.
+
+|값|의미|default|
+|---|---|---|
+|`flex-start`|items를 시작점(flex-start)을 기준으로 정렬|✔︎|
+|`flex-end`|items를 끝점(flex-end)을 기준으로 정렬|
+|`center`|items를 가운데로 정렬|
+|`space-between`|첫번째 item과 마지막 item을 각각 시작점, 끝점에 붙이고 나머지 items의 사이 간격을 균등하게 분배해서 정렬|
+|`space-around`|items를 균등한 여백을 포함하여 정렬|
+
+<img src="../images/css/justify-content.png">
 <hr>
 
 ### References
 - [Understanding the CSS3 Flexbox](http://blogs.quovantis.com/understanding-the-css3-flexbox/)
+- [모던 레이아웃 - 플렉스박스(Flexbox)](https://webclub.tistory.com/628)
 
 
 
