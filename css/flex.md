@@ -124,7 +124,7 @@ flex container의 주 축(main axis)을 기준으로 items의 정렬 방법을 �
 |`space-between`|첫번째 item과 마지막 item을 각각 시작점, 끝점에 붙이고 나머지 items의 사이 간격을 균등하게 분배해서 정렬|
 |`space-around`|items를 균등한 여백을 포함하여 정렬|
 
-<img src="../images/css/justify-content.png">
+<img src="../images/css/justify-content.png" width="700">
 <hr>
 
 ### References
