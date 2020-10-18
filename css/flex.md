@@ -124,7 +124,7 @@ flex container의 주 축(main axis)을 기준으로 items의 정렬 방법을 �
 |`space-between`|첫번째 item과 마지막 item을 각각 시작점, 끝점에 붙이고 나머지 items의 사이 간격을 균등하게 분배해서 정렬|
 |`space-around`|items를 균등한 여백을 포함하여 정렬|
 
-<img src="../images/css/justify-content.png" width="500">
+<img src="../images/css/justify-content.png" width="550">
 
 <br>
 <br>
@@ -138,7 +138,7 @@ items가 한 줄일 경우 `align-items` 속성을 사용해야 한다.
 |값|의미|default|
 |---|---|---|
 |`stretch`|container의 교차 축을 채우기 위해 items를 교차 축 방향으로 늘림|✔︎|
-|`flex-start`|justify-content와 같음|
+|`flex-start`|`justify-content`의 속성과 같음|
 |`flex-end`|〃|
 |`center`|〃|
 |`space-between`|〃|
@@ -146,9 +146,34 @@ items가 한 줄일 경우 `align-items` 속성을 사용해야 한다.
 
 <img src="../images/css/align-content.png" width="550">
 
+> `stretch`는 교차 축에 해당하는 너비의 값이 `auto` 인 경우 교차 축을 채우기 위해 자동으로 늘어난다.
 
 <br>
 <br>
+
+### 6) `align-items`
+
+`align-content`와 마찬가지로 교차 축(cross-axis) 기준으로 items의 정렬 방법을 설정한다. 단, items가 한 줄일 경우 많이 사용한다.
+
+> 주의할 점은 items가 flex-wrap을 통해 여러 줄(2줄 이상)일 경우에는 `align-content` 속성이 우선한다.
+따라서 `align-items`를 사용하려면 `align-content` 속성을 기본값(`stretch`)으로 설정해야 한다.
+
+|값|의미|default|
+|---|---|---|
+|`stretch`|`align-content`의 속성과 같음|✔︎|
+|`flex-start`|〃|
+|`flex-end`|〃|
+|`center`|〃|
+|`baseline`|items를 문자 기준선에 맞추어 정렬|
+
+<img src="../images/css/align-items.png" width="550">
+
+<br>
+<br>
+
+
+
+
 
 
 
