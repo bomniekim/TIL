@@ -13,7 +13,7 @@
 
 `Flexbox`는 __flex items__ 이라 불리는 복수의 자식 요소와 이들을 정렬하기 위해 감싸는 __flex container__ 부모 요소로 구성된다.
 
-- Flex Container 관련 속성은 [이 문서]((https://github.com/bomniekim/TIL/blob/master/css/flex-container.md))를 참조.
+- Flex Container 관련 속성은 [이 문서](https://github.com/bomniekim/TIL/blob/master/css/flex-container.md)를 참조.
 - Flex Items 관련 속성은 [이 문서](https://github.com/bomniekim/TIL/blob/master/css/flex-items.md)를 참조.
 
 
