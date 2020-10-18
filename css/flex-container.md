@@ -127,10 +127,6 @@ items가 한 줄일 경우 `align-items` 속성을 사용해야 한다.
 <br>
 <br>
 
-### Flex Items 속성
-
-### 1) 
-
 
 
 
