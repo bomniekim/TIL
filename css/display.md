@@ -58,6 +58,8 @@
 
 - inline 레벨 요소 내에 block 레벨 요소를 포함할 수 없다.
 
+- 텍스트를 처리하는 데 특화되어 있다  ?! 
+
 - [inline elements list 모두 보기](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#Elements)
 
 <br>
