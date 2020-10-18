@@ -144,6 +144,9 @@ items가 한 줄일 경우 `align-items` 속성을 사용해야 한다.
 |`space-between`|〃|
 |`space-around`|〃|
 
+<img src="../images/css/align-content.png" width="550">
+
+
 <br>
 <br>
 
