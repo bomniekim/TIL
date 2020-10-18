@@ -114,7 +114,7 @@ flex container의 __주축(main axis)__ 방향을 설정한다.
 
 ### 4) `justify-content`
 
-flex container의 주 축(main axis)을 기준으로 items의 정렬 방법을 설정한다.
+flex container의 주 축(main axis)을 기준으로 items의 정렬 방법을 설정한다. `flex-direciton: row;`를 default로 한다.
 
 |값|의미|default|
 |---|---|---|
@@ -124,8 +124,42 @@ flex container의 주 축(main axis)을 기준으로 items의 정렬 방법을 �
 |`space-between`|첫번째 item과 마지막 item을 각각 시작점, 끝점에 붙이고 나머지 items의 사이 간격을 균등하게 분배해서 정렬|
 |`space-around`|items를 균등한 여백을 포함하여 정렬|
 
-<img src="../images/css/justify-content.png" width="700">
+<img src="../images/css/justify-content.png" width="500">
+
+<br>
+<br>
+
+### 5) `align-content`
+
+flex container의 교차 축(cross-axis) 기준으로 items의 정렬 방법을 설정한다.
+> `flex-wrap` 을 통해 items가 여러 줄(2줄 이상)이고 여백이 있을 경우만 사용할 수 있다.<br>
+items가 한 줄일 경우 `align-items` 속성을 사용해야 한다.
+
+|값|의미|default|
+|---|---|---|
+|`stretch`|container의 교차 축을 채우기 위해 items를 교차 축 방향으로 늘림|✔︎|
+|`flex-start`|justify-content와 같음|
+|`flex-end`|〃|
+|`center`|〃|
+|`space-between`|〃|
+|`space-around`|〃|
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
 <hr>
+
 
 ### References
 - [Understanding the CSS3 Flexbox](http://blogs.quovantis.com/understanding-the-css3-flexbox/)
