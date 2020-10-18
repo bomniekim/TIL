@@ -54,6 +54,10 @@ _즉, 방향(수평, 수직)에 따라 주 축과 교차 축이 달라진다._
 
 
 ### References
+- [flexbox via MDN](https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout/Flexbox)
+
+- [CSS Flex(Flexible Box) 완벽 가이드
+ by heropy](https://heropy.blog/2018/11/24/css-flexible-box/)
 - [Understanding the CSS3 Flexbox](http://blogs.quovantis.com/understanding-the-css3-flexbox/)
 - [모던 레이아웃 - 플렉스박스(Flexbox)](https://webclub.tistory.com/628)
 
