@@ -11,7 +11,7 @@ flex items의 배치 순서를 설정한다.<br> HTML 코드를 변경하지 않
 |숫자|items의 배치 순서를 지정|`0`|
 > 음수 허용
 
-<img src="../images/css/flex-order.png" width="600">
+<img src="../images/css/flex-order.png" width="700">
 
 <Br>
 <Br>
@@ -29,7 +29,7 @@ item이 가변 너비가 아니거나, 값이 0일 경우 효과가 없다. (요
 |숫자|item의 증가 너비 비율을 설정|`0`|
 > 음수 값은 무효.
 
-<img src="../images/css/flex-grow.png" width="600">
+<img src="../images/css/flex-grow.png" width="700">
 
 > 위의 그림은 3 개의 item 모두 기본 `width:200px` 로 지정되어 있고, 아래 그림은 빨간 item만 고정 너비 200px이 지정되어 있는 모습이다. `flex-grow`를 지정한 숫자에 맞게 요소의 너비를 지정하기 위해서는 아래의 방법을 사용하는 것이 좋다.
 
@@ -49,7 +49,7 @@ item이 가변 너비가 아니면 효과가 없으며 0을 지정하면 축소�
 |숫자|item의 감소 너비 비율을 설정|`1`|
 > 음수 값은 무효
 
-<img src="../images/css/flex-shrink.png" width="600">
+<img src="../images/css/flex-shrink.png" width="700">
 
 <br>
 <br>
@@ -121,6 +121,6 @@ item의 (공간 배분 전) 기본 너비를 설정한다.<br>
 |baseline|item을 문자 기준선에 맞추어 정렬|
 
 
-<img src="../images/css/align-self.png" widht="600">
+<img src="../images/css/align-self.png" width="660">
 
 
