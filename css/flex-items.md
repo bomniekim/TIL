@@ -121,6 +121,6 @@ item의 (공간 배분 전) 기본 너비를 설정한다.<br>
 |baseline|item을 문자 기준선에 맞추어 정렬|
 
 
-<img src="../images/css/align-self.png" width="660">
+<img src="../images/css/align-self.png" width="550">
 
 
