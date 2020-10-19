@@ -123,7 +123,7 @@ items가 한 줄일 경우 `align-items` 속성을 사용해야 한다.
 |`center`|〃|
 |`baseline`|items를 문자 기준선에 맞추어 정렬|
 
-<img src="../images/css/align-items.png" width="550">
+<img src="../images/css/align-items.png" width="551">
 
 <br>
 <br>
