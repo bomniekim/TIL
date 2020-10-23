@@ -1,5 +1,7 @@
 ## Grid Container 속성
 
+<br>
+
 ### 1) `display`
 
 Grid Container(컨테이너)의 layout 배치를 정의하는 속성이다.
@@ -66,6 +68,27 @@ __명시적 열__(`Track`)의 크기를 정의한다.
 <br>
 
 ### 4) `grid-template-areas`
+
+지정된 그리드 영역 이름(`grid-area`)을 참조해 그리드 템플릿을 생성할 때 사용하는 속성이다.
+
+> [grid-area]()는 Grid Item에 적용하는 속성!
+
+```css
+.container {
+  grid-template-areas:
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+}
+/* 각각의 item에 grid-area 속성 적용 */
+header { grid-area: header; }
+main   { grid-area: main;   }
+aside  { grid-area: aside;  }
+footer { grid-area: footer; }
+```
+
+<img src="../images/css/grid-template-areas.png" width="600">
+
 
 
 
