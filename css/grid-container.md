@@ -90,6 +90,19 @@ footer { grid-area: footer; }
 <img src="../images/css/grid-template-areas.png" width="600">
 
 
+> `.`(마침표)를 사용하거나 명시적으로 `none`을 입력해 빈 영역을 정의할 수 있다.
+
+```css
+.container {
+  grid-template-areas:
+    "none header header"
+    "main . aside"
+    "footer footer footer";
+}
+```
+<img src="../images/css/grid-template-areas-none.png" width="600">
+
+
 
 
 

@@ -1,4 +1,4 @@
-# 그리드(Grid)
+# CSS Grid (그리드)
 
 CSS `Grid`(그리드)는 __2차원__(행과 열)의 레이아웃 시스템을 제공한다.<br>
 Flexible Box가 비교적 단순한 1차원 레이아웃을 위한 것이라면, 좀 더 복잡한 레이아웃을 위해 CSS Grid를 사용할 수 있다.
@@ -35,6 +35,8 @@ Grid의 하나의 행(row) 또는 열(column)을 의미한다.
 
 ### Grid 갭(Gap)
 Grid 셀 사이의 간격이다.
+
+<br>
 
 ## Grid Functions
 ## Grid Units
