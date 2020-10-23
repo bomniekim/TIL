@@ -5,13 +5,14 @@ Flexible Box가 비교적 단순한 1차원 레이아웃을 위한 것이라면,
 
 CSS Grid는 예전부터 핵(Hack)으로 불린 다양한 레이아웃 대체 방식들을 해결하기 위해 만들어진 특별한 CSS 모듈이다.
 
+<Br>
+<Br>
 
 ## Grid Container & Grid Items
 
 `CSS Grid`는 CSS Flex와 같이 Container(컨테이너)와 Item(아이템)이라는 두 가지 개념으로 구분되어 있다.
 Container는 Items를 감싸는 부모 요소이며, Items는 컨테이너 안에서 배치되는 복수의 자식 요소들이다.
 
-<br>
 <br>
 
 ## Grid Container 속성
@@ -34,8 +35,22 @@ Grid Container(컨테이너)의 layout 배치를 정의하는 속성이다.
 ### 2) `grid-template-rows`
 
 __명시적 행__(`Track`)의 크기를 정의한다.
+동시에 라인(Line)의 이름도 정의할 수 있다.
+<br>
+<Br>
+
+### 3) `grid-template-columns`
+
+__명시적 열__(`Track`)의 크기를 정의한다.
 동시에 라인(Line)의 이름도 정의할 수 있다.<br>
 
+<br>
+
+> `grid-template-rows` 와 `grid-template-columns` 의 사용방법은 같다. <br> 따라서 아래의 사용방법에서 rows를 columns로 바꾸면, 행과 관련된 값이 열에 관련된 값으로 바뀐다.
+
+<br>
+
+### 사용방법
 
 ```css
 .container {
