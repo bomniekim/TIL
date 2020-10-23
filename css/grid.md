@@ -7,7 +7,7 @@ CSS Grid는 예전부터 핵(Hack)으로 불린 다양한 레이아웃 대체 �
 
 <Br>
 
-<img src="../images/css/grid-terms.jpg" width="550">
+<img src="../images/css/grid-terms.jpg">
 
 <br>
 
